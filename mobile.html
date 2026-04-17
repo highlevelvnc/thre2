@@ -436,19 +436,26 @@ function groupByGeneration(ids){
   }
   walkUp(VOCE_ID,0);
   walkDown(VOCE_ID,0);
-  // For siblings/spouses without direct path - try via spouse or sibling
-  ids.forEach(id=>{
-    if(dist[id]===undefined){
-      const sp = p(id)?.spouseId;
-      if(sp && dist[sp]!==undefined) dist[id]=dist[sp];
-      else {
-        // Try via children
-        const kid = p(id)?.childrenIds?.[0];
-        if(kid && dist[kid]!==undefined) dist[id]=dist[kid]+1;
-        else dist[id]=99;
+  // Multi-pass resolution for siblings/spouses/in-laws without direct path
+  for(let pass=0;pass<3;pass++){
+    ids.forEach(id=>{
+      if(dist[id]!==undefined)return;
+      const person=p(id);if(!person)return;
+      // 1) Try siblings (share parents with known person)
+      for(const pid of (person.parentIds||[])){
+        for(const sid of (p(pid)?.childrenIds||[])){
+          if(sid!==id && dist[sid]!==undefined){dist[id]=dist[sid];return}
+        }
       }
-    }
-  });
+      // 2) Try spouse
+      if(person.spouseId && dist[person.spouseId]!==undefined){dist[id]=dist[person.spouseId];return}
+      // 3) Try via children
+      for(const kid of (person.childrenIds||[])){
+        if(dist[kid]!==undefined){dist[id]=dist[kid]+1;return}
+      }
+    });
+  }
+  ids.forEach(id=>{if(dist[id]===undefined)dist[id]=99});
   const groups = {};
   ids.forEach(id=>{
     const g=dist[id]??99;
