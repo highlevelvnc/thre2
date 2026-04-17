@@ -16,6 +16,7 @@
   --paterno:#3b82f6;--paterno-bg:rgba(59,130,246,0.12);--paterno-dark:#1e3a8a;
   --materno:#ec4899;--materno-bg:rgba(236,72,153,0.12);--materno-dark:#831843;
   --voce:#a855f7;--voce-bg:rgba(168,85,247,0.12);--voce-dark:#581c87;
+  --esposa:#f59e0b;--esposa-bg:rgba(245,158,11,0.12);--esposa-dark:#78350f;
   --br:#22c55e;--pt:#ef4444;
 }
 body{
@@ -51,8 +52,8 @@ header{
 
 /* ===== TABS ===== */
 .tabs{
-  display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;
-  padding:10px 12px 0;background:var(--bg);
+  display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4px;
+  padding:10px 8px 0;background:var(--bg);
   position:sticky;top:110px;z-index:90;
 }
 .tab{
@@ -67,6 +68,7 @@ header{
 .tab.active[data-tab="paterno"]{border-color:var(--paterno);background:var(--paterno-bg);color:var(--paterno)}
 .tab.active[data-tab="materno"]{border-color:var(--materno);background:var(--materno-bg);color:var(--materno)}
 .tab.active[data-tab="voce"]{border-color:var(--voce);background:var(--voce-bg);color:var(--voce)}
+.tab.active[data-tab="esposa"]{border-color:var(--esposa);background:var(--esposa-bg);color:var(--esposa)}
 
 /* ===== CONTENT ===== */
 main{padding:16px 12px 40px}
@@ -82,6 +84,7 @@ main{padding:16px 12px 40px}
 .panel[data-panel="paterno"] h2{color:var(--paterno)}
 .panel[data-panel="materno"] h2{color:var(--materno)}
 .panel[data-panel="voce"] h2{color:var(--voce)}
+.panel[data-panel="esposa"] h2{color:var(--esposa)}
 
 /* ===== GENERATION ===== */
 .gen{margin-bottom:28px}
@@ -124,6 +127,7 @@ main{padding:16px 12px 40px}
 .card.paterno{border-left:4px solid var(--paterno)}
 .card.materno{border-left:4px solid var(--materno)}
 .card.voce{border-left:4px solid var(--voce)}
+.card.esposa{border-left:4px solid var(--esposa)}
 
 .card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .avatar{
@@ -149,6 +153,37 @@ main{padding:16px 12px 40px}
 .place{
   font-size:10px;color:var(--txt3);margin-top:4px;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+
+/* Highlight strips (profission + death age) */
+.info-strip{
+  display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;
+}
+.strip-chip{
+  font-size:10px;font-weight:600;padding:3px 8px;
+  border-radius:8px;white-space:nowrap;
+  display:inline-flex;align-items:center;gap:3px;
+  line-height:1.2;
+}
+.strip-chip.profession{
+  background:rgba(99,102,241,0.15);color:#a5b4fc;
+  border:1px solid rgba(99,102,241,0.3);
+}
+.strip-chip.death-age{
+  background:rgba(156,163,175,0.12);color:#d1d5db;
+  border:1px solid rgba(156,163,175,0.25);
+}
+.strip-chip.death-age.young{
+  background:rgba(239,68,68,0.15);color:#fca5a5;
+  border:1px solid rgba(239,68,68,0.35);
+}
+.strip-chip.death-age.elder{
+  background:rgba(34,197,94,0.12);color:#86efac;
+  border:1px solid rgba(34,197,94,0.3);
+}
+.strip-chip.alive{
+  background:rgba(245,158,11,0.12);color:#fcd34d;
+  border:1px solid rgba(245,158,11,0.25);
 }
 
 /* Nationality bar */
@@ -195,6 +230,7 @@ main{padding:16px 12px 40px}
 .badge.paterno{background:var(--paterno-bg);color:var(--paterno)}
 .badge.materno{background:var(--materno-bg);color:var(--materno)}
 .badge.voce{background:var(--voce-bg);color:var(--voce)}
+.badge.esposa{background:var(--esposa-bg);color:var(--esposa)}
 
 .modal-section{margin-bottom:18px}
 .modal-section-title{
@@ -224,6 +260,7 @@ main{padding:16px 12px 40px}
 .rel-chip.paterno{border-color:var(--paterno);color:#93c5fd}
 .rel-chip.materno{border-color:var(--materno);color:#f9a8d4}
 .rel-chip.voce{border-color:var(--voce);color:#d8b4fe}
+.rel-chip.esposa{border-color:var(--esposa);color:#fcd34d}
 
 /* ===== FLOATING ACTION ===== */
 .fab{
@@ -265,6 +302,7 @@ main{padding:16px 12px 40px}
 .panel[data-panel="paterno"] .timeline-dot{border-color:var(--paterno)}
 .panel[data-panel="materno"] .timeline-dot{border-color:var(--materno)}
 .panel[data-panel="voce"] .timeline-dot{border-color:var(--voce)}
+.panel[data-panel="esposa"] .timeline-dot{border-color:var(--esposa)}
 
 /* Scroll anchor indicator */
 .legend-row{
@@ -310,6 +348,11 @@ main{padding:16px 12px 40px}
     <span>Você</span>
     <span class="tab-count" id="count-voce">0</span>
   </button>
+  <button class="tab" data-tab="esposa">
+    <span class="tab-icon">💛</span>
+    <span>Esposa</span>
+    <span class="tab-count" id="count-esposa">0</span>
+  </button>
 </nav>
 
 <div class="legend-row">
@@ -341,6 +384,14 @@ main{padding:16px 12px 40px}
     </div>
     <div id="content-voce"></div>
   </div>
+
+  <div class="panel" data-panel="esposa">
+    <div class="panel-header">
+      <h2>💛 Família da Esposa</h2>
+      <p>Beatriz · Dias · Barbosa · Lima · Neves 🇵🇹</p>
+    </div>
+    <div id="content-esposa"></div>
+  </div>
 </main>
 
 <button class="fab" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">↑</button>
@@ -358,6 +409,7 @@ main{padding:16px 12px 40px}
 // ============ DATA ============
 let TREE = {members:{},nextId:200};
 const VOCE_ID = 'p249'; // Vinicius
+const ESPOSA_ID = 'p284'; // Beatriz
 
 // Fetch the JSON
 fetch('arvore_atualizada.json')
@@ -373,9 +425,25 @@ function children(id){return (p(id)?.childrenIds||[]).map(p).filter(Boolean)}
 function parents(id){return (p(id)?.parentIds||[]).map(p).filter(Boolean)}
 function spouse(id){const x=p(id);return x?.spouseId?p(x.spouseId):null}
 function initials(n){return n.split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase()}
-function age(b,d){if(!b)return'';const y=d?new Date(d).getFullYear()-new Date(b).getFullYear():'';return d?` (${y}a)`:''}
-function fmtDate(d){if(!d)return'';const x=new Date(d);return x.getDate()+'/'+(x.getMonth()+1)+'/'+x.getFullYear()}
+function ageAtDeath(b,d){if(!b||!d)return null;const by=+b.substring(0,4),dy=+d.substring(0,4);return dy-by}
+function fmtDate(d){if(!d)return'';const[y,m,day]=d.split('-');return `${+day}/${+m}/${y}`}
+function fmtYear(d){if(!d)return'';return d.substring(0,4)}
 function flag(nat){return nat==='PT'?'🇵🇹':nat==='BR'?'🇧🇷':''}
+
+// Build highlight chips (profession, death age, alive indicator)
+function buildStrip(person){
+  const chips=[];
+  const ageD=ageAtDeath(person.birthDate,person.deathDate);
+  if(ageD!==null){
+    // classify: young <45 (red), normal 45-75 (gray), elder >=75 (green)
+    const cls=ageD<45?'young':ageD>=75?'elder':'';
+    chips.push(`<span class="strip-chip death-age ${cls}">✝ ${ageD} anos</span>`);
+  }
+  if(person.profession){
+    chips.push(`<span class="strip-chip profession">💼 ${person.profession}</span>`);
+  }
+  return chips.length?`<div class="info-strip">${chips.join('')}</div>`:'';
+}
 
 // ============ SIDE CLASSIFICATION ============
 // Paternal: Jorge Fernando (p241) and all ancestors
@@ -383,31 +451,33 @@ function flag(nat){return nat==='PT'?'🇵🇹':nat==='BR'?'🇧🇷':''}
 // Voce: Vinicius (p249), Jade, Clara
 
 function classifySides(){
-  const sides = {paterno:new Set(), materno:new Set(), voce:new Set()};
+  const sides = {paterno:new Set(), materno:new Set(), voce:new Set(), esposa:new Set()};
   // Vinicius + descendants
   const voceIds = [VOCE_ID];
   function addDesc(id){(p(id)?.childrenIds||[]).forEach(c=>{voceIds.push(c);addDesc(c)})}
   addDesc(VOCE_ID);
   voceIds.forEach(id=>sides.voce.add(id));
 
-  // Paternal: start from Fernando (p244 - pai do Vinicius), climb up
-  // Walk up parent chain ONLY (no spouse recursion to avoid cross-contamination)
+  // Climb up parent chain ONLY (no spouse recursion to avoid cross-contamination).
+  // Exclude ids already classified on any other side.
   function addAnc(id, side){
-    if(!id||sides[side].has(id)||sides.voce.has(id))return;
+    if(!id||sides[side].has(id))return;
+    for(const s of Object.keys(sides)){ if(s!==side && sides[s].has(id)) return; }
     sides[side].add(id);
     (p(id)?.parentIds||[]).forEach(pid=>addAnc(pid,side));
   }
   // After adding all ancestors, add siblings + their spouses at each level
   function addSiblingsAndSpouses(side){
     const toAdd = new Set();
+    const inOther = (id)=>Object.keys(sides).some(s=>s!==side && sides[s].has(id));
     sides[side].forEach(id=>{
-      // Spouse (if not in voce or other side)
+      // Spouse (if not in other side)
       const sp = p(id)?.spouseId;
-      if(sp && !sides.voce.has(sp) && !sides[side==='paterno'?'materno':'paterno'].has(sp)) toAdd.add(sp);
+      if(sp && !inOther(sp)) toAdd.add(sp);
       // Siblings
       (p(id)?.parentIds||[]).forEach(pid=>{
         (p(pid)?.childrenIds||[]).forEach(sid=>{
-          if(sid!==id && !sides.voce.has(sid) && !sides[side==='paterno'?'materno':'paterno'].has(sid)) toAdd.add(sid);
+          if(sid!==id && !inOther(sid)) toAdd.add(sid);
         });
       });
     });
@@ -415,8 +485,10 @@ function classifySides(){
   }
   addAnc('p244','paterno'); // Fernando
   addAnc('p243','materno'); // Patricia
+  addAnc(ESPOSA_ID,'esposa'); // Beatriz + ancestrais dela
   addSiblingsAndSpouses('paterno');
   addSiblingsAndSpouses('materno');
+  addSiblingsAndSpouses('esposa');
   return sides;
 }
 
@@ -436,6 +508,8 @@ function groupByGeneration(ids){
   }
   walkUp(VOCE_ID,0);
   walkDown(VOCE_ID,0);
+  // Also walk up Beatriz's line so her ancestors get correct generation distances
+  walkUp(ESPOSA_ID,0);
   // Multi-pass resolution for siblings/spouses/in-laws without direct path
   for(let pass=0;pass<3;pass++){
     ids.forEach(id=>{
@@ -479,8 +553,9 @@ function render(){
   document.getElementById('count-paterno').textContent = sides.paterno.size;
   document.getElementById('count-materno').textContent = sides.materno.size;
   document.getElementById('count-voce').textContent = sides.voce.size;
+  document.getElementById('count-esposa').textContent = sides.esposa.size;
 
-  ['paterno','materno','voce'].forEach(side=>{
+  ['paterno','materno','voce','esposa'].forEach(side=>{
     const ids = Array.from(sides[side]);
     const groups = groupByGeneration(ids);
     const container = document.getElementById('content-'+side);
@@ -534,10 +609,16 @@ function makeCard(person, side){
   c.dataset.id = person.id;
   c.dataset.name = person.name.toLowerCase();
   c.onclick = ()=>openModal(person.id, side);
-  const birth = person.birthDate ? fmtDate(person.birthDate) : '';
-  const death = person.deathDate ? ' – ' + fmtDate(person.deathDate) : '';
-  const dates = (birth||death) ? `<div class="dates">${birth}${death}${age(person.birthDate,person.deathDate)}</div>` : '';
+  // Date line: just years for cleanliness
+  let dates='';
+  if(person.birthDate||person.deathDate){
+    const by=fmtYear(person.birthDate), dy=fmtYear(person.deathDate);
+    if(by&&dy) dates=`<div class="dates">🎂 ${by} – ✝ ${dy}</div>`;
+    else if(by) dates=`<div class="dates">🎂 ${by}</div>`;
+    else if(dy) dates=`<div class="dates">✝ ${dy}</div>`;
+  }
   const place = person.birthPlace ? `<div class="place">📍 ${person.birthPlace}</div>` : '';
+  const strip = buildStrip(person);
   c.innerHTML = `
     <div class="card-top">
       <div class="avatar ${person.gender}">${initials(person.name)}</div>
@@ -549,7 +630,7 @@ function makeCard(person, side){
         </div>
       </div>
     </div>
-    ${dates}${place}
+    ${dates}${strip}${place}
   `;
   return c;
 }
@@ -566,18 +647,23 @@ function openModal(id, side){
 
   const chip = (prs, s) => prs.map(x=>`<span class="rel-chip ${s}" onclick="openModal('${x.id}','${s}')">${x.name}</span>`).join('');
 
+  const ageD = ageAtDeath(person.birthDate, person.deathDate);
+  const deathRow = death ? `<div class="modal-row"><span class="modal-row-label">Falecimento</span><span class="modal-row-value">${death}${ageD!==null?` <strong style="color:#fca5a5">(aos ${ageD} anos)</strong>`:''}</span></div>` : '';
+  const profRow = person.profession ? `<div class="modal-row"><span class="modal-row-label">Profissão</span><span class="modal-row-value"><strong>💼 ${person.profession}</strong></span></div>` : '';
+
   document.getElementById('modal-content').innerHTML = `
     <div class="modal-avatar avatar ${person.gender}">${initials(person.name)}</div>
     <h2>${person.name}</h2>
     <div class="modal-badges">
       ${person.nationality==='PT'?'<span class="badge pt">🇵🇹 Português</span>':''}
       ${person.nationality==='BR'?'<span class="badge br">🇧🇷 Brasileiro</span>':''}
-      <span class="badge ${side}">${side==='paterno'?'Paterno':side==='materno'?'Materno':'Você'}</span>
+      <span class="badge ${side}">${side==='paterno'?'Paterno':side==='materno'?'Materno':side==='esposa'?'Esposa':'Você'}</span>
     </div>
     <div class="modal-section">
       <div class="modal-row"><span class="modal-row-label">Gênero</span><span class="modal-row-value">${person.gender==='M'?'Masculino ♂':'Feminino ♀'}</span></div>
       <div class="modal-row"><span class="modal-row-label">Nascimento</span><span class="modal-row-value">${birth}</span></div>
-      ${death?`<div class="modal-row"><span class="modal-row-label">Falecimento</span><span class="modal-row-value">${death}</span></div>`:''}
+      ${deathRow}
+      ${profRow}
       ${person.birthPlace?`<div class="modal-row"><span class="modal-row-label">Local</span><span class="modal-row-value">${person.birthPlace}</span></div>`:''}
     </div>
     ${sp?`<div class="modal-section"><div class="modal-section-title">Cônjuge</div><div class="relation-list">${chip([sp],side)}</div></div>`:''}
