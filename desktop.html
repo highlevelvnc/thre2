@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arvore Genealogica - Familia Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header id="header">
+      <div class="header-left">
+        <div class="logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22c-4-3-8-6-8-11a4 4 0 0 1 8 0 4 4 0 0 1 8 0c0 5-4 8-8 11z"/>
+          </svg>
+          <h1>Arvore Genealogica</h1>
+        </div>
+        <span class="family-name">Familia Silva</span>
+      </div>
+      <div class="header-right">
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Buscar membro...">
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-secondary" id="zoomOutBtn" title="Diminuir">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg>
+          </button>
+          <span id="zoomLevel" class="zoom-label">100%</span>
+          <button class="btn btn-secondary" id="zoomInBtn" title="Aumentar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <button class="btn btn-secondary" id="centerBtn" title="Centralizar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+          </button>
+          <div class="divider"></div>
+          <button class="btn btn-secondary" id="exportBtn" title="Exportar JSON">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Exportar
+          </button>
+          <button class="btn btn-secondary" id="importBtn" title="Importar JSON">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+            Importar
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats bar -->
+    <div id="statsBar">
+      <div class="stat">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span id="totalMembers">0</span> membros
+      </div>
+      <div class="stat">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+        <span id="totalGenerations">0</span> geracoes
+      </div>
+      <div class="stat-legend">
+        <span class="legend-item legend-p"><span class="legend-dot"></span> Paterno</span>
+        <span class="legend-item legend-m"><span class="legend-dot"></span> Materno</span>
+        <span class="legend-item legend-c"><span class="legend-dot"></span> Voce/Filhas</span>
+        <span class="legend-item legend-pt">&#127477;&#127481; Portugues</span>
+        <span class="legend-item legend-br">&#127463;&#127479; Brasileiro</span>
+      </div>
+    </div>
+
+    <!-- Tree container -->
+    <main id="treeContainer">
+      <div id="treeViewport">
+        <svg id="connectionsSvg"></svg>
+        <div id="treeCards"></div>
+      </div>
+    </main>
+
+    <!-- Edit Panel -->
+    <div id="editPanel" class="panel">
+      <div class="panel-header">
+        <h2 id="panelTitle">Detalhes</h2>
+        <button class="btn-icon" id="closePanelBtn" title="Fechar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="panel-body">
+        <div class="avatar-section">
+          <div class="avatar-large" id="panelAvatar"></div>
+        </div>
+        <form id="editForm">
+          <input type="hidden" id="editId">
+          <div class="form-group">
+            <label for="editName">Nome Completo</label>
+            <input type="text" id="editName" placeholder="Nome completo">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="editGender">Genero</label>
+              <select id="editGender">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="editBirthDate">Nascimento</label>
+              <input type="date" id="editBirthDate">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="editDeathDate">Falecimento</label>
+              <input type="date" id="editDeathDate">
+            </div>
+            <div class="form-group">
+              <label for="editBirthPlace">Local Nasc.</label>
+              <input type="text" id="editBirthPlace" placeholder="Cidade, Estado">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="editNotes">Observacoes</label>
+            <textarea id="editNotes" rows="3" placeholder="Notas sobre este membro..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button type="button" class="btn btn-danger" id="deletePersonBtn">Excluir</button>
+          </div>
+        </form>
+        <div class="add-relative-section">
+          <h3>Adicionar Parente</h3>
+          <div class="add-relative-buttons">
+            <button class="btn btn-outline" id="addSpouseBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              Conjuge
+            </button>
+            <button class="btn btn-outline" id="addChildBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              Filho(a)
+            </button>
+            <button class="btn btn-outline" id="addParentBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12h14"/></svg>
+              Pai/Mae
+            </button>
+            <button class="btn btn-outline" id="addSiblingBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Irmao(a)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Person Modal -->
+    <div id="addModal" class="modal-overlay hidden">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 id="addModalTitle">Adicionar Membro</h2>
+          <button class="btn-icon" id="closeModalBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <form id="addForm">
+          <input type="hidden" id="addRelationType">
+          <input type="hidden" id="addRelativeOf">
+          <div class="form-group">
+            <label for="addName">Nome Completo</label>
+            <input type="text" id="addName" placeholder="Nome completo" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="addGender">Genero</label>
+              <select id="addGender">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="addBirthDate">Nascimento</label>
+              <input type="date" id="addBirthDate">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="addBirthPlace">Local de Nascimento</label>
+            <input type="text" id="addBirthPlace" placeholder="Cidade, Estado">
+          </div>
+          <div class="modal-actions">
+            <button type="button" class="btn btn-secondary" id="cancelAddBtn">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Import Modal -->
+    <div id="importModal" class="modal-overlay hidden">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Importar Dados</h2>
+          <button class="btn-icon" id="closeImportBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="form-group">
+          <label>Cole o JSON exportado:</label>
+          <textarea id="importData" rows="10" placeholder='{"members": {...}}'></textarea>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-secondary" id="cancelImportBtn">Cancelar</button>
+          <button class="btn btn-primary" id="confirmImportBtn">Importar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <input type="file" id="fileInput" accept=".json" style="display:none">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

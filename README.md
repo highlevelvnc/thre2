@@ -4,8 +4,11 @@ Sistema pessoal de pesquisa e visualização genealógica, cobrindo 9 gerações
 
 ## 📱 Visualização
 
+### Auto-detect
+Abra [`index.html`](index.html) — detecta automaticamente mobile vs desktop e redireciona.
+
 ### Desktop
-Abra [`index.html`](index.html) — visualização completa com zoom, pan e edição.
+Abra [`desktop.html`](desktop.html) — visualização completa com zoom, pan e edição.
 
 ### Mobile (recomendado no celular) ⭐
 Abra [`mobile.html`](mobile.html) — otimizado para toque, com as famílias **totalmente separadas em abas**:
@@ -34,8 +37,9 @@ Abra [`mobile.html`](mobile.html) — otimizado para toque, com as famílias **t
 
 ```
 three/
-├── index.html              # Visualizador desktop (zoom/pan)
+├── index.html              # Auto-detect (redireciona mobile/desktop)
 ├── mobile.html             # Visualizador mobile (abas, separado)
+├── desktop.html            # Visualizador desktop (zoom/pan)
 ├── styles.css              # Estilos desktop
 ├── app.js                  # Lógica desktop
 └── arvore_atualizada.json  # Dados da árvore (fonte única)

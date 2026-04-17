@@ -391,22 +391,32 @@ function classifySides(){
   voceIds.forEach(id=>sides.voce.add(id));
 
   // Paternal: start from Fernando (p244 - pai do Vinicius), climb up
+  // Walk up parent chain ONLY (no spouse recursion to avoid cross-contamination)
   function addAnc(id, side){
-    if(!id||sides[side].has(id))return;
+    if(!id||sides[side].has(id)||sides.voce.has(id))return;
     sides[side].add(id);
-    const person=p(id);if(!person)return;
-    // Add spouse if exists and same side (or mark them as same side)
-    if(person.spouseId && !sides[side].has(person.spouseId)) sides[side].add(person.spouseId);
-    (person.parentIds||[]).forEach(pid=>addAnc(pid,side));
-    // Add siblings too
-    (person.parentIds||[]).forEach(pid=>{
-      (p(pid)?.childrenIds||[]).forEach(sid=>{
-        if(sid!==id&&!sides[side].has(sid))sides[side].add(sid);
+    (p(id)?.parentIds||[]).forEach(pid=>addAnc(pid,side));
+  }
+  // After adding all ancestors, add siblings + their spouses at each level
+  function addSiblingsAndSpouses(side){
+    const toAdd = new Set();
+    sides[side].forEach(id=>{
+      // Spouse (if not in voce or other side)
+      const sp = p(id)?.spouseId;
+      if(sp && !sides.voce.has(sp) && !sides[side==='paterno'?'materno':'paterno'].has(sp)) toAdd.add(sp);
+      // Siblings
+      (p(id)?.parentIds||[]).forEach(pid=>{
+        (p(pid)?.childrenIds||[]).forEach(sid=>{
+          if(sid!==id && !sides.voce.has(sid) && !sides[side==='paterno'?'materno':'paterno'].has(sid)) toAdd.add(sid);
+        });
       });
     });
+    toAdd.forEach(id=>sides[side].add(id));
   }
   addAnc('p244','paterno'); // Fernando
   addAnc('p243','materno'); // Patricia
+  addSiblingsAndSpouses('paterno');
+  addSiblingsAndSpouses('materno');
   return sides;
 }
 
@@ -448,9 +458,11 @@ function groupByGeneration(ids){
 }
 
 const GEN_LABELS = {
-  '-1':'VOCÊ','-2':'FILHAS (Gen -1)','0':'PAIS (Gen 1)','1':'AVÓS (Gen 2)',
-  '2':'BISAVÓS (Gen 3)','3':'TRISAVÓS (Gen 4)','4':'TETRAVÓS (Gen 5)',
-  '5':'PENTAVÓS (Gen 6)','6':'HEXAVÓS (Gen 7)','99':'OUTROS'
+  '-1':'👶 FILHAS (Netas)','0':'⭐ VOCÊ','1':'👨‍👩‍👧 PAIS',
+  '2':'👴 AVÓS','3':'🏛️ BISAVÓS (Gen 3)','4':'📜 TRISAVÓS (Gen 4)',
+  '5':'🌿 TETRAVÓS (Gen 5)','6':'🌳 PENTAVÓS (Gen 6)',
+  '7':'🏔️ HEXAVÓS (Gen 7)','8':'⛰️ HEPTAVÓS (Gen 8)','9':'🗻 OCTAVÓS (Gen 9)',
+  '99':'❓ OUTROS'
 };
 
 // ============ RENDER ============
@@ -466,8 +478,9 @@ function render(){
     const groups = groupByGeneration(ids);
     const container = document.getElementById('content-'+side);
     container.innerHTML = '';
-    // Sort gens ascending (closer to Vinicius first for voce, ancestors first for paterno/materno)
-    const keys = Object.keys(groups).map(Number).sort((a,b)=>side==='voce'?b-a:a-b);
+    // For ancestor panels (paterno/materno): OLDEST FIRST (highest gen number at top)
+    // For voce: Vinicius first, then descendants below
+    const keys = Object.keys(groups).map(Number).sort((a,b)=>side==='voce'?b-a:b-a);
     keys.forEach(gen=>{
       const section = document.createElement('section');
       section.className='gen';
