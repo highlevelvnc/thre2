@@ -13,19 +13,22 @@ Abra [`index.html`](index.html) (redireciona para `mobile.html`) — visualizado
 
 ## 📊 Estado Atual
 
-- **96 membros** em **11 gerações** (inclui heptavós de Avintes — séc. XVII/XVIII)
-- Linha portuguesa: **Avintes, V.N. Gaia, Porto**
+- **100 membros** em **11 gerações** (inclui heptavós de Avintes — séc. XVII/XVIII)
+- Linha portuguesa: **Avintes, V.N. Gaia, Porto** + **Mafamude?, V.N. Gaia**
 - Linha paterna: **Paraíba / Pernambuco**
 - Linha materna: **Rio de Janeiro + Portugal**
 
 ## 🏆 Descobertas Recentes
 
-- ✅ **12 novos ancestrais (2026-04-20)** — assento de casamento de 20/maio/1757 em Avintes (Alexandre Pereira × Maria das Neves):
+- ✅ **Casamento de Custódio Pereira × Anna das Neves (c. 1800-1805)** — assento direto encontrado:
+  - **Correção**: pai do Custódio era **Bernardo de Areijo** (não d'Aguiar — erro de leitura no doc do filho José, 1846)
+  - **4 novos hexavós**: Antonio de Souza + Juliana Maria (**Mafamude?**, nova freguesia fora de Avintes!) · Manoel Pereira + Joana Domingues (Alem do Ribeiro)
+- ✅ **12 ancestrais via assento 20/maio/1757** (Alexandre Pereira × Maria das Neves):
   - **Hexavós**: Ignacio Pereira + Maria Pereira (Cazal) · Manoel das Neves + Maria das Neves (Arcas de Campos)
   - **Heptavós**: Manoel Rodrigues · Manoel Dias + Anna Pereira (Portellas) · **Domingos Jorge + Andreza das Neves** (Campos) · Mateus de Almeida + Maria Gomes (Arcas de Campos)
-  - Match via FamilySearch GCML-LQB confirmou a linhagem (com correção de erro de ligação na árvore deles)
-- ✅ **4 pentavós portugueses** via Jose Pereira (irmão da Roza):
-  - Bernardo d'Aguiar + Thereza Pereira (pais do Custodio Pereira)
+  - Match via FamilySearch GCML-LQB confirmou a linhagem
+- ✅ **4 pentavós portugueses** via José Pereira (irmão da Roza):
+  - Bernardo de Areijo + Thereza Pereira (pais do Custodio Pereira)
   - Alexandre Pereira + Maria das Neves (pais da Anna das Neves)
 - ✅ **Óbito da Roza Pereira** — 30/set/1856 em Aldeia Nova, 50 anos
 - ✅ **Óbito do Custodio Pereira** — 20/abril/1851, 68 anos, Alem do Ribeiro
