@@ -13,7 +13,7 @@ Abra [`index.html`](index.html) (redireciona para `mobile.html`) — visualizado
 
 ## 📊 Estado Atual
 
-- **100 membros** em **11 gerações** (inclui heptavós de Avintes — séc. XVII/XVIII)
+- **107 membros** em **12 gerações** (inclui candidatos a octavós — séc. XVII)
 - Linha portuguesa: **Avintes, V.N. Gaia, Porto** + **Mafamude?, V.N. Gaia**
 - Linha paterna: **Paraíba / Pernambuco**
 - Linha materna: **Rio de Janeiro + Portugal**
