@@ -18,7 +18,9 @@
       "childrenIds": [
         "p204",
         "p206"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p201": {
       "id": "p201",
@@ -38,7 +40,9 @@
       "childrenIds": [
         "p204",
         "p206"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p202": {
       "id": "p202",
@@ -54,7 +58,9 @@
       "parentIds": [],
       "childrenIds": [
         "p205"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p203": {
       "id": "p203",
@@ -70,7 +76,9 @@
       "parentIds": [],
       "childrenIds": [
         "p205"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p204": {
       "id": "p204",
@@ -95,7 +103,9 @@
         "p211",
         "p212",
         "p213"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p205": {
       "id": "p205",
@@ -120,7 +130,9 @@
         "p211",
         "p212",
         "p213"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p206": {
       "id": "p206",
@@ -139,7 +151,9 @@
       ],
       "childrenIds": [
         "p319"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p207": {
       "id": "p207",
@@ -162,7 +176,9 @@
         "p219",
         "p220",
         "p221"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p208": {
       "id": "p208",
@@ -186,7 +202,9 @@
         "p226",
         "p227",
         "p228"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p209": {
       "id": "p209",
@@ -203,7 +221,9 @@
         "p204",
         "p205"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p210": {
       "id": "p210",
@@ -224,7 +244,9 @@
         "p229",
         "p230",
         "p231"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p211": {
       "id": "p211",
@@ -241,7 +263,9 @@
         "p204",
         "p205"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p212": {
       "id": "p212",
@@ -258,7 +282,9 @@
         "p204",
         "p205"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p213": {
       "id": "p213",
@@ -275,7 +301,9 @@
         "p204",
         "p205"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p214": {
       "id": "p214",
@@ -296,7 +324,9 @@
         "p226",
         "p227",
         "p228"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p215": {
       "id": "p215",
@@ -314,7 +344,9 @@
         "p229",
         "p230",
         "p231"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p216": {
       "id": "p216",
@@ -330,7 +362,9 @@
       "parentIds": [],
       "childrenIds": [
         "p239"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p217": {
       "id": "p217",
@@ -349,7 +383,9 @@
         "p219",
         "p220",
         "p221"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p218": {
       "id": "p218",
@@ -366,7 +402,9 @@
         "p207",
         "p217"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p219": {
       "id": "p219",
@@ -383,7 +421,9 @@
         "p207",
         "p217"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p220": {
       "id": "p220",
@@ -400,7 +440,9 @@
         "p207",
         "p217"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p221": {
       "id": "p221",
@@ -417,7 +459,9 @@
         "p207",
         "p217"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p222": {
       "id": "p222",
@@ -431,7 +475,9 @@
       "nationality": "BR",
       "spouseId": "p218",
       "parentIds": [],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p223": {
       "id": "p223",
@@ -448,7 +494,9 @@
         "p208",
         "p214"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p224": {
       "id": "p224",
@@ -465,7 +513,9 @@
         "p208",
         "p214"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p225": {
       "id": "p225",
@@ -482,7 +532,9 @@
         "p208",
         "p214"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p226": {
       "id": "p226",
@@ -499,7 +551,9 @@
         "p208",
         "p214"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p227": {
       "id": "p227",
@@ -516,7 +570,9 @@
         "p208",
         "p214"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p228": {
       "id": "p228",
@@ -533,7 +589,9 @@
         "p208",
         "p214"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p229": {
       "id": "p229",
@@ -550,7 +608,9 @@
         "p210",
         "p215"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p230": {
       "id": "p230",
@@ -567,7 +627,9 @@
         "p210",
         "p215"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p231": {
       "id": "p231",
@@ -584,7 +646,9 @@
         "p210",
         "p215"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p232": {
       "id": "p232",
@@ -600,7 +664,9 @@
       "parentIds": [],
       "childrenIds": [
         "p238"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p233": {
       "id": "p233",
@@ -616,7 +682,9 @@
       "parentIds": [],
       "childrenIds": [
         "p238"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p237": {
       "id": "p237",
@@ -636,7 +704,9 @@
       "childrenIds": [
         "p242",
         "p274"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p238": {
       "id": "p238",
@@ -657,7 +727,9 @@
         "p243",
         "p246",
         "p247"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p239": {
       "id": "p239",
@@ -678,7 +750,9 @@
         "p243",
         "p246",
         "p247"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p240": {
       "id": "p240",
@@ -687,14 +761,16 @@
       "birthDate": "",
       "deathDate": "",
       "birthPlace": "",
-      "profession": "",
-      "notes": "POSSIVEL pai biologico do Jorge Fernando. NAO CONSTA no registro civil oficial (so consta a mae Josefa). Possivel pai biologico nao reconhecido.",
+      "profession": "Fogueteiro (fazia fogos para festas)",
+      "notes": "Alcunha \"ZEZINHO FOGUETEIRO\". Fazia fogos para festas. CONFIRMADO 21/jun/2026 via mensagem do filho dele Fernando (pai do Vinicius). Separou-se da Josefa antes do nascimento do Jorge Fernando (1944) — por isso o filho não tem o nome \"Angelo\". Identidade biológica do pai do Jorge Fernando agora indirectamente confirmada. Pesquisa pendente: cartório/jornais Umbuzeiro/Recife procurando \"Zezinho Fogueteiro\" ou \"José Angelo, fogueteiro\" — alcunha é raro suficiente para localizar.",
       "nationality": "BR",
       "spouseId": "p263",
       "parentIds": [],
       "childrenIds": [
         "p241"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p241": {
       "id": "p241",
@@ -704,7 +780,7 @@
       "deathDate": "",
       "birthPlace": "Umbuzeiro, Paraiba, Brasil",
       "profession": "",
-      "notes": "Nasceu em UMBUZEIRO-PARAIBA. Filiacao oficial: apenas Josefa Pessoa de Melo (MAE). Pai Jose Angelo nao oficializado. RG PE emitido Recife 19/04/1968.",
+      "notes": "Avô paterno do Vinicius. CONFIRMADO 21/jun/2026 (pelo próprio filho Fernando, pai do Vinicius): Pais separaram-se antes do nascimento. Quem registou foi \"algum amigo ou parente da Josefa que botou qualquer nome\" — daí \"da Silva\" arbitrário, não herdado. Identidade biológica: filho de Josefa Pessoa de Melo (Matinada/Umbuzeiro PB) e de José Angelo \"Zezinho Fogueteiro\". Nasc. 23/abr/1944 Umbuzeiro PB. RG PE emitido Recife 19/04/1968. Apelido bio real (se reconhecido) seria \"Angelo\"; \"Silva\" foi escolha do escrivão.",
       "nationality": "BR",
       "spouseId": "p242",
       "parentIds": [
@@ -714,7 +790,9 @@
       "childrenIds": [
         "p244",
         "p245"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p242": {
       "id": "p242",
@@ -734,7 +812,9 @@
       "childrenIds": [
         "p244",
         "p245"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p243": {
       "id": "p243",
@@ -753,7 +833,9 @@
       ],
       "childrenIds": [
         "p249"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p244": {
       "id": "p244",
@@ -772,7 +854,9 @@
       ],
       "childrenIds": [
         "p249"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p245": {
       "id": "p245",
@@ -789,7 +873,9 @@
         "p241",
         "p242"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p246": {
       "id": "p246",
@@ -808,7 +894,9 @@
       ],
       "childrenIds": [
         "p248"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p247": {
       "id": "p247",
@@ -825,7 +913,9 @@
         "p238",
         "p239"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p248": {
       "id": "p248",
@@ -841,7 +931,9 @@
       "parentIds": [
         "p246"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p249": {
       "id": "p249",
@@ -861,7 +953,9 @@
       "childrenIds": [
         "p250",
         "p251"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p250": {
       "id": "p250",
@@ -878,7 +972,9 @@
         "p249",
         "p284"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p251": {
       "id": "p251",
@@ -895,7 +991,9 @@
         "p249",
         "p284"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p252": {
       "id": "p252",
@@ -912,7 +1010,9 @@
       "childrenIds": [
         "p323",
         "p200"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p253": {
       "id": "p253",
@@ -932,7 +1032,9 @@
       "childrenIds": [
         "p323",
         "p200"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p254": {
       "id": "p254",
@@ -951,7 +1053,9 @@
       ],
       "childrenIds": [
         "p201"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p255": {
       "id": "p255",
@@ -970,7 +1074,9 @@
       ],
       "childrenIds": [
         "p201"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p256": {
       "id": "p256",
@@ -990,7 +1096,9 @@
       "childrenIds": [
         "p253",
         "p283"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p257": {
       "id": "p257",
@@ -1010,7 +1118,9 @@
       "childrenIds": [
         "p253",
         "p283"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p258": {
       "id": "p258",
@@ -1026,7 +1136,9 @@
       "parentIds": [],
       "childrenIds": [
         "p254"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p259": {
       "id": "p259",
@@ -1042,7 +1154,9 @@
       "parentIds": [],
       "childrenIds": [
         "p254"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p260": {
       "id": "p260",
@@ -1058,7 +1172,9 @@
       "parentIds": [],
       "childrenIds": [
         "p255"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p261": {
       "id": "p261",
@@ -1074,7 +1190,9 @@
       "parentIds": [],
       "childrenIds": [
         "p255"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p262": {
       "id": "p262",
@@ -1093,7 +1211,9 @@
       "childrenIds": [
         "p242",
         "p274"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p263": {
       "id": "p263",
@@ -1101,15 +1221,19 @@
       "gender": "F",
       "birthDate": "",
       "deathDate": "",
-      "birthPlace": "Paraiba/Pernambuco",
+      "birthPlace": "Matinada / Umbuzeiro, Paraíba, Brasil",
       "profession": "",
-      "notes": "Mae do Jorge Fernando da Silva. UNICA parental no RG do filho (PE 1968). Pai nao registrado. NAO CONFIRMADA com documentos.",
+      "notes": "Bisavó paterna do Vinicius. CONFIRMADO 21/jun/2026: separou-se de José Angelo \"Zezinho Fogueteiro\" e foi morar em outro lugar — Jorge Fernando nasceu após a separação. Local da família: UMBUZEIRO + MATINADA (fazenda ancestral Pessôa de Mello, depois Fazenda Prosperidade do Cel. José da Silva Pessôa) + Recife (Casa Amarela?). A menção de \"Matinada\" pelo filho Fernando é CONFIRMAÇÃO INDIRECTA de descendência do tronco Pessôa de Mello — Matinada era fazenda ancestral da família, passou por herança ao Cel. José da Silva Pessôa. Mãe registada do Jorge Fernando no RG de Recife 1968.",
       "nationality": "BR",
       "spouseId": "p240",
-      "parentIds": [],
+      "parentIds": [
+        "p347"
+      ],
       "childrenIds": [
         "p241"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p274": {
       "id": "p274",
@@ -1126,7 +1250,9 @@
         "p262",
         "p237"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p275": {
       "id": "p275",
@@ -1140,7 +1266,9 @@
       "nationality": "BR",
       "spouseId": "p274",
       "parentIds": [],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p276": {
       "id": "p276",
@@ -1156,7 +1284,9 @@
       "parentIds": [],
       "childrenIds": [
         "p237"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p277": {
       "id": "p277",
@@ -1172,7 +1302,9 @@
       "parentIds": [],
       "childrenIds": [
         "p237"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p278": {
       "id": "p278",
@@ -1188,7 +1320,9 @@
       "parentIds": [],
       "childrenIds": [
         "p262"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p279": {
       "id": "p279",
@@ -1207,7 +1341,9 @@
       ],
       "childrenIds": [
         "p256"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p280": {
       "id": "p280",
@@ -1226,7 +1362,9 @@
       ],
       "childrenIds": [
         "p256"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p281": {
       "id": "p281",
@@ -1245,7 +1383,9 @@
       ],
       "childrenIds": [
         "p257"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p282": {
       "id": "p282",
@@ -1264,7 +1404,9 @@
       ],
       "childrenIds": [
         "p257"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p297": {
       "id": "p297",
@@ -1283,7 +1425,9 @@
       ],
       "childrenIds": [
         "p281"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p298": {
       "id": "p298",
@@ -1302,7 +1446,9 @@
       ],
       "childrenIds": [
         "p281"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p299": {
       "id": "p299",
@@ -1321,7 +1467,9 @@
       ],
       "childrenIds": [
         "p282"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p300": {
       "id": "p300",
@@ -1340,7 +1488,9 @@
       ],
       "childrenIds": [
         "p282"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p301": {
       "id": "p301",
@@ -1356,7 +1506,9 @@
       "parentIds": [],
       "childrenIds": [
         "p297"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p302": {
       "id": "p302",
@@ -1372,7 +1524,9 @@
       "parentIds": [],
       "childrenIds": [
         "p297"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p303": {
       "id": "p303",
@@ -1388,7 +1542,9 @@
       "parentIds": [],
       "childrenIds": [
         "p298"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p304": {
       "id": "p304",
@@ -1404,7 +1560,9 @@
       "parentIds": [],
       "childrenIds": [
         "p298"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p305": {
       "id": "p305",
@@ -1423,7 +1581,9 @@
       ],
       "childrenIds": [
         "p299"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p306": {
       "id": "p306",
@@ -1439,7 +1599,9 @@
       "parentIds": [],
       "childrenIds": [
         "p299"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p307": {
       "id": "p307",
@@ -1455,7 +1617,9 @@
       "parentIds": [],
       "childrenIds": [
         "p300"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p308": {
       "id": "p308",
@@ -1473,7 +1637,9 @@
       ],
       "childrenIds": [
         "p300"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p309": {
       "id": "p309",
@@ -1492,7 +1658,9 @@
       ],
       "childrenIds": [
         "p279"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p310": {
       "id": "p310",
@@ -1511,7 +1679,9 @@
       ],
       "childrenIds": [
         "p279"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p311": {
       "id": "p311",
@@ -1530,7 +1700,9 @@
       ],
       "childrenIds": [
         "p280"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p312": {
       "id": "p312",
@@ -1549,7 +1721,9 @@
       ],
       "childrenIds": [
         "p280"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p313": {
       "id": "p313",
@@ -1565,7 +1739,9 @@
       "parentIds": [],
       "childrenIds": [
         "p316"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p316": {
       "id": "p316",
@@ -1582,7 +1758,9 @@
         "p283",
         "p313"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p317": {
       "id": "p317",
@@ -1596,7 +1774,9 @@
       "nationality": "BR",
       "spouseId": "p209",
       "parentIds": [],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p318": {
       "id": "p318",
@@ -1612,7 +1792,9 @@
       "parentIds": [],
       "childrenIds": [
         "p319"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p319": {
       "id": "p319",
@@ -1629,7 +1811,9 @@
         "p206",
         "p318"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p320": {
       "id": "p320",
@@ -1648,7 +1832,9 @@
       ],
       "childrenIds": [
         "p305"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p321": {
       "id": "p321",
@@ -1664,7 +1850,9 @@
       "parentIds": [],
       "childrenIds": [
         "p305"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p283": {
       "id": "p283",
@@ -1683,7 +1871,9 @@
       ],
       "childrenIds": [
         "p316"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p284": {
       "id": "p284",
@@ -1703,7 +1893,9 @@
       "childrenIds": [
         "p250",
         "p251"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p285": {
       "id": "p285",
@@ -1722,7 +1914,9 @@
       ],
       "childrenIds": [
         "p284"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p286": {
       "id": "p286",
@@ -1741,7 +1935,9 @@
       ],
       "childrenIds": [
         "p284"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p287": {
       "id": "p287",
@@ -1760,7 +1956,9 @@
       ],
       "childrenIds": [
         "p285"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p288": {
       "id": "p288",
@@ -1779,7 +1977,9 @@
       ],
       "childrenIds": [
         "p285"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p289": {
       "id": "p289",
@@ -1795,7 +1995,9 @@
       "parentIds": [],
       "childrenIds": [
         "p287"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p290": {
       "id": "p290",
@@ -1811,7 +2013,9 @@
       "parentIds": [],
       "childrenIds": [
         "p287"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p291": {
       "id": "p291",
@@ -1830,7 +2034,9 @@
       ],
       "childrenIds": [
         "p288"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p292": {
       "id": "p292",
@@ -1849,7 +2055,9 @@
       ],
       "childrenIds": [
         "p288"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p293": {
       "id": "p293",
@@ -1865,7 +2073,9 @@
       "parentIds": [],
       "childrenIds": [
         "p291"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p294": {
       "id": "p294",
@@ -1881,7 +2091,9 @@
       "parentIds": [],
       "childrenIds": [
         "p291"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p295": {
       "id": "p295",
@@ -1897,7 +2109,9 @@
       "parentIds": [],
       "childrenIds": [
         "p292"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p296": {
       "id": "p296",
@@ -1913,7 +2127,9 @@
       "parentIds": [],
       "childrenIds": [
         "p292"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p322": {
       "id": "p322",
@@ -1929,7 +2145,9 @@
       "parentIds": [],
       "childrenIds": [
         "p308"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p323": {
       "id": "p323",
@@ -1946,7 +2164,9 @@
         "p252",
         "p253"
       ],
-      "childrenIds": []
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
     },
     "p324": {
       "id": "p324",
@@ -1962,7 +2182,9 @@
       "parentIds": [],
       "childrenIds": [
         "p309"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p325": {
       "id": "p325",
@@ -1978,7 +2200,9 @@
       "parentIds": [],
       "childrenIds": [
         "p309"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p326": {
       "id": "p326",
@@ -1994,7 +2218,9 @@
       "parentIds": [],
       "childrenIds": [
         "p310"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p327": {
       "id": "p327",
@@ -2010,7 +2236,9 @@
       "parentIds": [],
       "childrenIds": [
         "p310"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p328": {
       "id": "p328",
@@ -2026,7 +2254,9 @@
       "parentIds": [],
       "childrenIds": [
         "p311"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p329": {
       "id": "p329",
@@ -2042,7 +2272,9 @@
       "parentIds": [],
       "childrenIds": [
         "p311"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p330": {
       "id": "p330",
@@ -2058,7 +2290,9 @@
       "parentIds": [],
       "childrenIds": [
         "p312"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p331": {
       "id": "p331",
@@ -2074,7 +2308,9 @@
       "parentIds": [],
       "childrenIds": [
         "p312"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p332": {
       "id": "p332",
@@ -2090,7 +2326,9 @@
       "parentIds": [],
       "childrenIds": [
         "p320"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p333": {
       "id": "p333",
@@ -2106,7 +2344,9 @@
       "parentIds": [],
       "childrenIds": [
         "p320"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p334": {
       "id": "p334",
@@ -2122,7 +2362,9 @@
       "parentIds": [],
       "childrenIds": [
         "p286"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
     },
     "p335": {
       "id": "p335",
@@ -2138,8 +2380,240 @@
       "parentIds": [],
       "childrenIds": [
         "p286"
-      ]
+      ],
+      "jewish": false,
+      "hypothesis": false
+    },
+    "p336": {
+      "id": "p336",
+      "name": "Diogo Fernandes (Camaragibe)",
+      "gender": "M",
+      "birthDate": "1540-01-01",
+      "deathDate": "1595-01-01",
+      "birthPlace": "Portugal",
+      "profession": "Feitor engenho Camaragibe (PE)",
+      "notes": "✡️ CRISTÃO-NOVO documentado. Feitor do engenho de Camaragibe (freguesia S. Lourenço de Muribara) no tempo do Governador Jeronymo de Albuquerque \"o torto\". Marido de Branca Dias. Fonte: Nobiliarchia Pernambucana de Borges da Fonseca, Vol XLVII (1925), linhas 24047, 34692. HIPOTÉTICO ancestral distante da Josefa Pessoa de Melo via tronco Pessôa de Mello.",
+      "nationality": "PT",
+      "spouseId": "p337",
+      "parentIds": [],
+      "childrenIds": [
+        "p338",
+        "p339"
+      ],
+      "jewish": true,
+      "hypothesis": true,
+      "side": "paterno"
+    },
+    "p337": {
+      "id": "p337",
+      "name": "Branca Dias",
+      "gender": "F",
+      "birthDate": "1545-01-01",
+      "deathDate": "1605-01-01",
+      "birthPlace": "Portugal",
+      "profession": "",
+      "notes": "✡️ CRISTÃ-NOVA documentada — uma das mais famosas de Pernambuco colonial. Mulher de Diogo Fernandes. Fonte: Nobiliarchia, estudos académicos sobre cristãos-novos PE. HIPOTÉTICA ancestral distante da Josefa Pessoa de Melo.",
+      "nationality": "PT",
+      "spouseId": "p336",
+      "parentIds": [],
+      "childrenIds": [
+        "p338",
+        "p339"
+      ],
+      "jewish": true,
+      "hypothesis": true,
+      "side": "paterno"
+    },
+    "p338": {
+      "id": "p338",
+      "name": "Beatriz Fernandes",
+      "gender": "F",
+      "birthDate": "1565-01-01",
+      "deathDate": "1605-01-01",
+      "birthPlace": "Pernambuco, depois Lisboa",
+      "profession": "",
+      "notes": "✡️ VÍTIMA DOCUMENTADA DA INQUISIÇÃO. Filha de Diogo Fernandes e Branca Dias. Presa pelo Santo Ofício, bens arrematados pelo Ouvidor de Pernambuco, levada para Lisboa em 1600 — nunca mais voltou. Fonte: Nobiliarchia Pernambucana linha 34692.",
+      "nationality": "PT",
+      "spouseId": null,
+      "parentIds": [
+        "p336",
+        "p337"
+      ],
+      "childrenIds": [],
+      "jewish": true,
+      "hypothesis": false,
+      "side": "paterno"
+    },
+    "p339": {
+      "id": "p339",
+      "name": "Felippe Dias Vaz",
+      "gender": "M",
+      "birthDate": "1570-01-01",
+      "deathDate": "1620-01-01",
+      "birthPlace": "Pernambuco, Brasil",
+      "profession": "Senhor engenho S. Bartholomeu de Muribeca",
+      "notes": "✡️ Filho de Diogo Fernandes e Branca Dias (cristãos-novos). Casou com Brites Mendes \"a nova\" (neta de Jerônimo de Albuquerque) — sem descendência. Fonte: Nobiliarchia linha 24047.",
+      "nationality": "BR",
+      "spouseId": "p340",
+      "parentIds": [
+        "p336",
+        "p337"
+      ],
+      "childrenIds": [],
+      "jewish": true,
+      "hypothesis": false,
+      "side": "paterno"
+    },
+    "p340": {
+      "id": "p340",
+      "name": "Brites Mendes \"a nova\"",
+      "gender": "F",
+      "birthDate": "1580-01-01",
+      "deathDate": "1640-01-01",
+      "birthPlace": "Pernambuco, Brasil",
+      "profession": "",
+      "notes": "Neta de Jerônimo de Albuquerque \"o torto\" (fundador). Casou com Felippe Dias Vaz (filho de Branca Dias). Sem descendência conhecida. Fonte: Nobiliarchia linha 24047.",
+      "nationality": "BR",
+      "spouseId": "p339",
+      "parentIds": [],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "side": "paterno"
+    },
+    "p341": {
+      "id": "p341",
+      "name": "Brites Mendes de Vasconcellos \"a velha\"",
+      "gender": "F",
+      "birthDate": "1560-01-01",
+      "deathDate": "1640-01-01",
+      "birthPlace": "Lisboa, Portugal",
+      "profession": "",
+      "notes": "✡️ SUSPEITA CRISTÃ-NOVA. Apelido \"Mendes\" é top-5 sefardita. Natural de Lisboa. Casou com Arnao de Hollanda (fundador holandês de Pernambuco). Aparece em 30+ ramos da árvore Cavalcanti/Albuquerque/Pessôa de Mello/Hollanda. Fonte: Nobiliarchia, linhas 6577, 7126, 14634, 21910 etc.",
+      "nationality": "PT",
+      "spouseId": null,
+      "parentIds": [],
+      "childrenIds": [],
+      "jewish": true,
+      "hypothesis": false,
+      "side": "paterno"
+    },
+    "p342": {
+      "id": "p342",
+      "name": "Isabel Maria Pessôa de Mello",
+      "gender": "F",
+      "birthDate": "1785-01-01",
+      "deathDate": "1840-01-01",
+      "birthPlace": "São Lourenço da Mata, Pernambuco, Brasil",
+      "profession": "",
+      "notes": "Tronco do apelido \"Pessôa de Mello\". Casou com Joaquim do Rego Barros Cavalcanti. Avó paterna de Antonio da Silva Pessôa de Mello. Fonte: Nobiliarchia + parentesco.com.br idp=33273. HIPOTÉTICA ancestral da Josefa Pessoa de Melo (via Bom Jardim PE).",
+      "nationality": "BR",
+      "spouseId": "p343",
+      "parentIds": [],
+      "childrenIds": [
+        "p344"
+      ],
+      "jewish": false,
+      "hypothesis": true
+    },
+    "p343": {
+      "id": "p343",
+      "name": "Joaquim do Rego Barros Cavalcanti",
+      "gender": "M",
+      "birthDate": "1780-01-01",
+      "deathDate": "1840-01-01",
+      "birthPlace": "Pernambuco, Brasil",
+      "profession": "",
+      "notes": "Fidalgo Casa Real. Tronco Rego Barros + Cavalcanti de Albuquerque (origem Florença, Itália, via Filippo Cavalcanti 1560). Marido de Isabel Maria Pessôa de Mello. Fonte: Nobiliarchia, parentesco.com.br.",
+      "nationality": "BR",
+      "spouseId": "p342",
+      "parentIds": [],
+      "childrenIds": [
+        "p344"
+      ],
+      "jewish": false,
+      "hypothesis": true
+    },
+    "p344": {
+      "id": "p344",
+      "name": "Antonio da Silva Pessôa de Mello",
+      "gender": "M",
+      "birthDate": "1810-01-01",
+      "deathDate": "1852-01-01",
+      "birthPlace": "Bom Jardim, Pernambuco, Brasil",
+      "profession": "",
+      "notes": "Tronco da linha Pessôa de Mello de Umbuzeiro. Pai do Cel. José da Silva Pessôa (patriarca de Umbuzeiro). Avô do Pres. Epitácio Pessoa. Fonte: parentesco.com.br idp=33273, Nobiliarchia, FGV/CPDOC.",
+      "nationality": "BR",
+      "spouseId": "p345",
+      "parentIds": [
+        "p343",
+        "p342"
+      ],
+      "childrenIds": [
+        "p346",
+        "p347"
+      ],
+      "jewish": false,
+      "hypothesis": false
+    },
+    "p345": {
+      "id": "p345",
+      "name": "Luiza Cavalcanti",
+      "gender": "F",
+      "birthDate": "1815-01-01",
+      "deathDate": "",
+      "birthPlace": "Paudalho, Pernambuco, Brasil",
+      "profession": "",
+      "notes": "Mulher de Antonio da Silva Pessôa de Mello. Fonte: parentesco.com.br idp=33273.",
+      "nationality": "BR",
+      "spouseId": "p344",
+      "parentIds": [],
+      "childrenIds": [
+        "p346"
+      ],
+      "jewish": false,
+      "hypothesis": false
+    },
+    "p346": {
+      "id": "p346",
+      "name": "Cel. José da Silva Pessôa",
+      "gender": "M",
+      "birthDate": "1835-01-01",
+      "deathDate": "1873-01-01",
+      "birthPlace": "Engenho Eixo, Paudalho, Pernambuco, Brasil",
+      "profession": "Coronel da Guarda Nacional, Senhor de Engenho",
+      "notes": "PATRIARCA DE UMBUZEIRO. Mudou-se para Umbuzeiro c.1860, construiu a Casa Amarelinha c.1868. Pai do Pres. Epitácio Pessoa (1865 Umbuzeiro). Fonte: parentesco.com.br idp=33273, IBGE Monografia Umbuzeiro 1957, FGV/CPDOC. HIPÓTESE: Josefa Pessoa de Melo descende de ramo colateral deste tronco (irmãos do Cel. José que ficaram em Umbuzeiro e preservaram o apelido completo \"Pessôa de Mello\", enquanto este ramo presidencial abreviou para \"Pessoa\"). A Fazenda Prosperidade dele em Umbuzeiro era originalmente chamada \"Matinada(s)\" — herdada da cousinhood Rego Barros / Cavalcanti / Pessôa de Mello. CONFIRMAÇÃO 21/jun/2026: descendentes da família Josefa Pessoa de Melo mencionam \"Matinada\" como local de origem familiar — forte sinal de descendência colateral.",
+      "nationality": "BR",
+      "spouseId": null,
+      "parentIds": [
+        "p344",
+        "p345"
+      ],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false
+    },
+    "p347": {
+      "id": "p347",
+      "name": "Pai de Josefa (Pessôa de Mello — identidade a confirmar)",
+      "gender": "M",
+      "birthDate": "1875-01-01",
+      "deathDate": "",
+      "birthPlace": "Matinada / Umbuzeiro, Paraíba, Brasil",
+      "profession": "",
+      "notes": "🔍 PLACEHOLDER HIPOTÉTICO. Identidade real pendente do batismo da Josefa (1900-1920 Matinada/Umbuzeiro). CONFIRMAÇÃO INDIRECTA 21/jun/2026: filho/neto da Josefa (Fernando) menciona \"Matinada\" como local da família — Matinada(s) é a fazenda ancestral Pessôa de Mello herdada pelo Cel. José da Silva Pessôa (depois Faz. Prosperidade). HIPÓTESE: ramo colateral do Cel. José da Silva Pessôa, descendente que ficou em Matinada/Umbuzeiro e preservou o apelido completo \"Pessôa de Mello\". Quando chegar batismo, substituir placeholder pelo nome real.",
+      "nationality": "BR",
+      "spouseId": null,
+      "parentIds": [
+        "p344",
+        "p345"
+      ],
+      "childrenIds": [
+        "p263"
+      ],
+      "jewish": false,
+      "hypothesis": true
     }
   },
-  "nextId": 336
+  "nextId": 348
 }

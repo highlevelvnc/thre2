@@ -213,6 +213,40 @@ main{padding:16px 12px 40px}
 .nat-pt{background:linear-gradient(135deg,rgba(239,68,68,0.08),var(--card))!important}
 .nat-br{background:linear-gradient(135deg,rgba(34,197,94,0.08),var(--card))!important}
 
+/* Jewish ancestor — Star of David */
+.jewish-mark{
+  font-size:13px;line-height:1;
+  text-shadow:0 0 8px rgba(99,102,241,0.5);
+  filter:drop-shadow(0 0 2px rgba(99,102,241,0.7));
+}
+.card.jewish{
+  background:linear-gradient(135deg,rgba(99,102,241,0.10),var(--card))!important;
+  box-shadow:inset 0 0 0 1px rgba(99,102,241,0.25);
+}
+
+/* Hypothesis ancestor — dashed border + research icon */
+.card.hypothesis{
+  border-style:dashed!important;
+  border-color:rgba(245,158,11,0.55)!important;
+  opacity:.92;
+}
+.card.hypothesis::before{
+  content:'🔍 hipotético';
+  position:absolute;top:-9px;right:8px;
+  font-size:9px;font-weight:700;letter-spacing:.5px;
+  background:var(--bg);color:#fcd34d;
+  padding:1px 7px;border-radius:6px;
+  border:1px solid rgba(245,158,11,0.5);
+}
+.modal-badges .jewish-badge{
+  background:rgba(99,102,241,0.18);color:#a5b4fc;
+  border:1px solid rgba(99,102,241,0.4);
+}
+.modal-badges .hyp-badge{
+  background:rgba(245,158,11,0.15);color:#fcd34d;
+  border:1px dashed rgba(245,158,11,0.5);
+}
+
 /* ===== DETAIL MODAL ===== */
 .modal{
   position:fixed;inset:0;background:rgba(0,0,0,0.7);
@@ -434,8 +468,8 @@ let TREE = {members:{},nextId:200};
 const VOCE_ID = 'p249'; // Vinicius
 const ESPOSA_ID = 'p284'; // Beatriz
 
-// Fetch the JSON
-fetch('arvore_atualizada.json')
+// Fetch the JSON (cache-bust to ensure latest)
+fetch('arvore_atualizada.json?v=' + Date.now(), {cache: 'no-store'})
   .then(r=>r.json())
   .then(data=>{TREE=data;render()})
   .catch(()=>{
@@ -570,6 +604,13 @@ function classifySides(){
   addAnc('p244','paterno'); // Fernando
   addAnc('p243','materno'); // Patricia
   addAnc(ESPOSA_ID,'esposa'); // Beatriz + ancestrais dela
+  // Honor explicit side flag for floating hypothetical/jewish historical ancestors
+  Object.values(TREE.members).forEach(person=>{
+    if(person.side && sides[person.side] && !sides[person.side].has(person.id)){
+      const alreadyInOther = Object.keys(sides).some(s=>s!==person.side && sides[s].has(person.id));
+      if(!alreadyInOther) sides[person.side].add(person.id);
+    }
+  });
   addSiblingsAndSpouses('paterno');
   addSiblingsAndSpouses('materno');
   addSiblingsAndSpouses('esposa');
@@ -689,7 +730,8 @@ function makeCouple(a, b, side){
 
 function makeCard(person, side){
   const c = document.createElement('div');
-  c.className = `card ${side} nat-${(person.nationality||'').toLowerCase()}`;
+  const extra = (person.jewish ? ' jewish' : '') + (person.hypothesis ? ' hypothesis' : '');
+  c.className = `card ${side} nat-${(person.nationality||'').toLowerCase()}${extra}`;
   c.dataset.id = person.id;
   c.dataset.name = person.name.toLowerCase();
   c.onclick = ()=>openModal(person.id, side);
@@ -711,6 +753,7 @@ function makeCard(person, side){
         <div class="sub">
           ${locationBadgeHtml(person)}
           <span>${person.gender==='M'?'♂':'♀'}</span>
+          ${person.jewish?'<span class="jewish-mark" title="Cristão-novo / Sefardita documentado">✡️</span>':''}
         </div>
       </div>
     </div>
@@ -748,6 +791,8 @@ function openModal(id, side){
         const reg=l.region?` · ${l.region}`:'';
         return `<span class="badge ${cls}">${l.flag} ${stateImg}${lbl}${reg}</span>`;})()}
       <span class="badge ${side}">${side==='paterno'?'Paterno':side==='materno'?'Materno':side==='esposa'?'Esposa':'Você'}</span>
+      ${person.jewish?'<span class="badge jewish-badge">✡️ Cristão-novo / Sefardita</span>':''}
+      ${person.hypothesis?'<span class="badge hyp-badge">🔍 Hipotético — a confirmar</span>':''}
     </div>
     <div class="modal-section">
       <div class="modal-row"><span class="modal-row-label">Gênero</span><span class="modal-row-value">${person.gender==='M'?'Masculino ♂':'Feminino ♀'}</span></div>
