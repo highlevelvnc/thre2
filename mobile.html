@@ -146,9 +146,32 @@ main{padding:16px 12px 40px}
 }
 .sub{
   font-size:11px;color:var(--txt2);margin-top:2px;
-  display:flex;align-items:center;gap:4px;flex-wrap:wrap;
+  display:flex;align-items:center;gap:6px;flex-wrap:wrap;
 }
 .flag{font-size:10px}
+.flag-chip{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:13px;line-height:1;
+}
+.flag-chip img.state-flag{
+  width:18px;height:13px;object-fit:cover;
+  border-radius:2px;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.15);
+  display:inline-block;vertical-align:middle;
+}
+.flag-chip .region{
+  font-size:9px;font-weight:800;letter-spacing:.5px;
+  padding:2px 5px;border-radius:5px;
+  background:rgba(255,255,255,0.06);
+  color:var(--region-c, currentColor);
+  border:1px solid var(--region-c, currentColor);
+  opacity:.9;
+}
+.modal-badges .state-flag{
+  width:24px;height:17px;object-fit:cover;
+  border-radius:3px;vertical-align:middle;margin-right:4px;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.2);
+}
 .dates{font-size:10px;color:var(--txt3);margin-top:6px}
 .place{
   font-size:10px;color:var(--txt3);margin-top:4px;
@@ -430,6 +453,67 @@ function fmtDate(d){if(!d)return'';const[y,m,day]=d.split('-');return `${+day}/$
 function fmtYear(d){if(!d)return'';return d.substring(0,4)}
 function flag(nat){return nat==='PT'?'🇵🇹':nat==='BR'?'🇧🇷':''}
 
+// Mapa de estados BR + distritos PT (ordem importa: padrões mais específicos primeiro)
+const BR_STATES = [
+  {abbr:'RJ', name:'Rio de Janeiro', pat:/rio de janeiro|, ?rj\b|\brj\b/i},
+  {abbr:'SP', name:'São Paulo', pat:/s[ãa]o paulo|, ?sp\b|\bsp\b/i},
+  {abbr:'PE', name:'Pernambuco', pat:/pernambuco|, ?pe\b/i},
+  {abbr:'PB', name:'Paraíba', pat:/para[ií]ba|, ?pb\b/i},
+  {abbr:'MG', name:'Minas Gerais', pat:/minas gerais|, ?mg\b/i},
+  {abbr:'BA', name:'Bahia', pat:/bahia|, ?ba\b/i},
+  {abbr:'CE', name:'Ceará', pat:/cear[áa]|, ?ce\b/i},
+  {abbr:'RS', name:'Rio Grande do Sul', pat:/rio grande do sul|, ?rs\b/i},
+  {abbr:'PR', name:'Paraná', pat:/paran[áa]|, ?pr\b/i},
+  {abbr:'SC', name:'Santa Catarina', pat:/santa catarina|, ?sc\b/i},
+  {abbr:'GO', name:'Goiás', pat:/goi[áa]s|, ?go\b/i},
+  {abbr:'ES', name:'Espírito Santo', pat:/esp[ií]rito santo|, ?es\b/i},
+];
+const PT_DISTRICTS = [
+  {abbr:'Porto', pat:/porto|v\.?n\.? gaia|gaia|avintes|vila do conde|mindelo|vila ch[aã]/i},
+  {abbr:'Aveiro', pat:/aveiro|arouca/i},
+  {abbr:'Braga', pat:/braga/i},
+  {abbr:'Lisboa', pat:/lisboa/i},
+];
+
+function locationBadge(person){
+  const nat = person.nationality;
+  const place = (person.birthPlace||'').toLowerCase();
+  if(nat==='PT' || /portugal/.test(place)){
+    for(const d of PT_DISTRICTS){
+      if(d.pat.test(place)) return {flag:'🇵🇹', region:d.abbr, color:'#ef4444'};
+    }
+    return {flag:'🇵🇹', region:'', color:'#ef4444'};
+  }
+  if(nat==='BR' || nat==='Brasileira' || /brasil/.test(place)){
+    for(const s of BR_STATES){
+      if(s.pat.test(place)) return {flag:'🇧🇷', region:s.abbr, color:'#22c55e'};
+    }
+    return {flag:'🇧🇷', region:'', color:'#22c55e'};
+  }
+  return null;
+}
+// Bandeiras oficiais dos estados BR (Wikimedia thumb 60px)
+const STATE_FLAG_URLS = {
+  RJ: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/60px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png',
+  SP: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/60px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png',
+  PE: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/60px-Bandeira_de_Pernambuco.svg.png',
+  PB: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/60px-Bandeira_da_Para%C3%ADba.svg.png',
+  MG: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/60px-Bandeira_de_Minas_Gerais.svg.png',
+  BA: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/60px-Bandeira_da_Bahia.svg.png',
+  CE: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/60px-Bandeira_do_Cear%C3%A1.svg.png',
+};
+
+function locationBadgeHtml(person){
+  const loc = locationBadge(person);
+  if(!loc) return '';
+  const stateImg = STATE_FLAG_URLS[loc.region]
+    ? `<img class="state-flag" src="${STATE_FLAG_URLS[loc.region]}" alt="${loc.region}" loading="lazy">`
+    : '';
+  const regionLabel = loc.region && !stateImg
+    ? `<span class="region">${loc.region}</span>` : '';
+  return `<span class="flag-chip" style="--region-c:${loc.color}">${loc.flag}${stateImg}${regionLabel}</span>`;
+}
+
 // Build highlight chips (profession, death age, alive indicator)
 function buildStrip(person){
   const chips=[];
@@ -625,7 +709,7 @@ function makeCard(person, side){
       <div class="card-info">
         <div class="name">${person.name}</div>
         <div class="sub">
-          ${flag(person.nationality) ? `<span class="flag">${flag(person.nationality)}</span>`:''}
+          ${locationBadgeHtml(person)}
           <span>${person.gender==='M'?'♂':'♀'}</span>
         </div>
       </div>
@@ -655,8 +739,14 @@ function openModal(id, side){
     <div class="modal-avatar avatar ${person.gender}">${initials(person.name)}</div>
     <h2>${person.name}</h2>
     <div class="modal-badges">
-      ${person.nationality==='PT'?'<span class="badge pt">🇵🇹 Português</span>':''}
-      ${person.nationality==='BR'?'<span class="badge br">🇧🇷 Brasileiro</span>':''}
+      ${(()=>{const l=locationBadge(person);if(!l)return '';
+        const lbl=l.flag==='🇵🇹'?'Português':'Brasileiro';
+        const cls=l.flag==='🇵🇹'?'pt':'br';
+        const stateImg = STATE_FLAG_URLS[l.region]
+          ? `<img class="state-flag" src="${STATE_FLAG_URLS[l.region]}" alt="${l.region}">`
+          : '';
+        const reg=l.region?` · ${l.region}`:'';
+        return `<span class="badge ${cls}">${l.flag} ${stateImg}${lbl}${reg}</span>`;})()}
       <span class="badge ${side}">${side==='paterno'?'Paterno':side==='materno'?'Materno':side==='esposa'?'Esposa':'Você'}</span>
     </div>
     <div class="modal-section">
