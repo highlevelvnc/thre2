@@ -20,7 +20,8 @@
         "p206"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L152-8NZ"
     },
     "p201": {
       "id": "p201",
@@ -42,7 +43,8 @@
         "p206"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L152-Y66"
     },
     "p202": {
       "id": "p202",
@@ -60,7 +62,8 @@
         "p205"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "PZTF-XJX"
     },
     "p203": {
       "id": "p203",
@@ -78,7 +81,8 @@
         "p205"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L152-Y2N"
     },
     "p204": {
       "id": "p204",
@@ -105,7 +109,8 @@
         "p213"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L152-T3V"
     },
     "p205": {
       "id": "p205",
@@ -132,7 +137,8 @@
         "p213"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L152-LD2"
     },
     "p206": {
       "id": "p206",
@@ -178,7 +184,8 @@
         "p221"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L15K-1QL"
     },
     "p208": {
       "id": "p208",
@@ -204,7 +211,8 @@
         "p228"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GZ4H-1ZS"
     },
     "p209": {
       "id": "p209",
@@ -223,7 +231,8 @@
       ],
       "childrenIds": [],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GP8X-8ZB"
     },
     "p210": {
       "id": "p210",
@@ -246,7 +255,8 @@
         "p231"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L1Y1-CGZ"
     },
     "p211": {
       "id": "p211",
@@ -265,7 +275,8 @@
       ],
       "childrenIds": [],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GPZR-5KD"
     },
     "p212": {
       "id": "p212",
@@ -284,7 +295,8 @@
       ],
       "childrenIds": [],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GZ4C-QJ3"
     },
     "p213": {
       "id": "p213",
@@ -303,7 +315,8 @@
       ],
       "childrenIds": [],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GZ4C-W7K"
     },
     "p214": {
       "id": "p214",
@@ -326,7 +339,8 @@
         "p228"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GYSL-FG2"
     },
     "p215": {
       "id": "p215",
@@ -377,7 +391,10 @@
       "notes": "Faleceu aos 65 anos. Primeira esposa de Joao Goncalves Thiago. FamilySearch ID: L15K-PC2.",
       "nationality": "BR",
       "spouseId": null,
-      "parentIds": [],
+      "parentIds": [
+        "p349",
+        "p350"
+      ],
       "childrenIds": [
         "p218",
         "p219",
@@ -385,7 +402,8 @@
         "p221"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "L15K-IPC2"
     },
     "p218": {
       "id": "p218",
@@ -1012,14 +1030,15 @@
         "p200"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "PZTX-KJQ"
     },
     "p253": {
       "id": "p253",
       "name": "Roza Pereira",
       "gender": "F",
       "birthDate": "1806-01-01",
-      "deathDate": "1856-09-30",
+      "deathDate": "1856-01-01",
       "birthPlace": "Alem do Ribeiro, Avintes, Porto, Portugal",
       "profession": "",
       "notes": "Faleceu aos 50 anos em Aldeia Nova, Avintes. Tambem conhecida como Roza das Neves e Roza Maria. Filha de Custodio Pereira e Anna das Neves. Irma de Jose Pereira (p283).",
@@ -1034,7 +1053,8 @@
         "p200"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "PZTF-ZNR"
     },
     "p254": {
       "id": "p254",
@@ -1055,7 +1075,8 @@
         "p201"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "PZTX-W27"
     },
     "p255": {
       "id": "p255",
@@ -1076,7 +1097,8 @@
         "p201"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "PZTX-LCV"
     },
     "p256": {
       "id": "p256",
@@ -1221,9 +1243,9 @@
       "gender": "F",
       "birthDate": "",
       "deathDate": "",
-      "birthPlace": "Matinada / Umbuzeiro, Paraíba, Brasil",
+      "birthPlace": "Matinada (7°40'04\"S 35°37'26\"W), distrito Umbuzeiro, Paraíba, Brasil",
       "profession": "",
-      "notes": "Bisavó paterna do Vinicius. CONFIRMADO 21/jun/2026: separou-se de José Angelo \"Zezinho Fogueteiro\" e foi morar em outro lugar — Jorge Fernando nasceu após a separação. Local da família: UMBUZEIRO + MATINADA (fazenda ancestral Pessôa de Mello, depois Fazenda Prosperidade do Cel. José da Silva Pessôa) + Recife (Casa Amarela?). A menção de \"Matinada\" pelo filho Fernando é CONFIRMAÇÃO INDIRECTA de descendência do tronco Pessôa de Mello — Matinada era fazenda ancestral da família, passou por herança ao Cel. José da Silva Pessôa. Mãe registada do Jorge Fernando no RG de Recife 1968.",
+      "notes": "Bisavó paterna do Vinicius. CONFIRMADO 21/jun/2026 (Fernando, filho dela): separou-se de José Angelo \"Zezinho Fogueteiro\" e foi morar em outro lugar — Jorge Fernando nasceu após a separação. Locais família: UMBUZEIRO + MATINADA + Recife (casa amarela). \n\n⚠️ HIPÓTESE Pessoa de Mello — 4 cenários possíveis (sem prova documental ainda):\n(a) Ramo colateral genuíno do Antonio da Silva Pessôa de Mello que ficou em Matinada quando sede passou ao Cel. José.\n(b) Descendente de agregada/empregada que adoptou apelido dos donos da fazenda (padrão comum no Brasil colonial).\n(c) Filha natural de varão Pessôa com mulher local.\n(d) Homonímia coincidente (Pessoa é dos apelidos mais comuns do Nordeste).\n\nCAVEAT: primeiros moradores documentados de Matinadas (historiador José Eduardo Gomes) — Aguiar, Souza, Vieira, Valdevino, Barbosa — NÃO incluem Pessoa de Mello. Sem batismo dela (1900-1920) ou do filho Jorge Fernando (1944), descendência directa NÃO está provada. Mãe registada do Jorge Fernando no RG de Recife 1968.",
       "nationality": "BR",
       "spouseId": "p240",
       "parentIds": [
@@ -1883,7 +1905,7 @@
       "deathDate": "",
       "birthPlace": "",
       "profession": "",
-      "notes": "Esposa de Vinicius. Mae de Jade e Clara.",
+      "notes": "Esposa de Vinicius. Mae de Jade e Clara. Nascida 2000. Filha de Alexandre Dornelas Barbosa (1967) + Dolores Cristina Dias Barbosa (1970). ✏️ CORRECÇÃO 21/jun/2026: data anterior (~1997) era estimativa minha — Vinicius corrigiu para 2000.",
       "nationality": "BR",
       "spouseId": "p249",
       "parentIds": [
@@ -1922,11 +1944,11 @@
       "id": "p286",
       "name": "Alexandre Dornelas Barbosa",
       "gender": "M",
-      "birthDate": "1957-08-28",
+      "birthDate": "1967-08-28",
       "deathDate": "",
-      "birthPlace": "Rio de Janeiro, RJ",
+      "birthPlace": "Instituto Fernandes Figueira, Rio de Janeiro, RJ",
       "profession": "Comerciário",
-      "notes": "Pai de Beatriz. Sogro de Vinicius.",
+      "notes": "Nascido 28/ago/1967 às 18h00 no Instituto Fernandes Figueira (RJ). Cor branca. Comerciário. Casou-se com Dolores Cristina em 25/jan/1989, Cartório RJ #7319. Pais: Luiz Sergio Barbosa + Janeth Dornelas Barbosa. Avós paternos: Carlos Barbosa + Adalgisa Abrantes (p363+p364). Avós maternos: José Dornelas + Nice Duarte Carneiro (p365+p348). Declarante na certidão: o próprio pai Luiz Sergio, em 30/ago/1967. Testemunhas: Esnar Rodrigues + Sebastião Canuto da Silva. Fonte primária: certidão de nascimento Nº 190.371, 5ª Circunscrição Lagoa e Gávea, livro 542 fls 232, oficial Dr. Francisco Oswaldo Impellizieri, Rua Xavier da Silveira 59-A Sobrado, Copacabana RJ.",
       "nationality": "BR",
       "spouseId": "p285",
       "parentIds": [
@@ -2184,7 +2206,8 @@
         "p309"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCML-2NS"
     },
     "p325": {
       "id": "p325",
@@ -2202,7 +2225,8 @@
         "p309"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCML-K6W"
     },
     "p326": {
       "id": "p326",
@@ -2220,7 +2244,8 @@
         "p310"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCML-PP2"
     },
     "p327": {
       "id": "p327",
@@ -2238,7 +2263,8 @@
         "p310"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCMG-9Z4"
     },
     "p328": {
       "id": "p328",
@@ -2256,7 +2282,8 @@
         "p311"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCML-YGL"
     },
     "p329": {
       "id": "p329",
@@ -2274,7 +2301,8 @@
         "p311"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCML-18Z"
     },
     "p330": {
       "id": "p330",
@@ -2292,7 +2320,8 @@
         "p312"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCMG-MXL"
     },
     "p331": {
       "id": "p331",
@@ -2310,7 +2339,8 @@
         "p312"
       ],
       "jewish": false,
-      "hypothesis": false
+      "hypothesis": false,
+      "fs_id": "GCMG-C3R"
     },
     "p332": {
       "id": "p332",
@@ -2356,10 +2386,13 @@
       "deathDate": "",
       "birthPlace": "",
       "profession": "",
-      "notes": "Pai de Alexandre Dornelas Barbosa. Fonte: certidão de casamento RJ #7319 (25/jan/1989).",
+      "notes": "Pai de Alexandre Dornelas Barbosa (p286). Casado com Janeth Dornelas Barbosa (p335). Pais: Carlos Barbosa (p363) + Adalgisa Abrantes (p364). Fonte: certidão de nasc. Alexandre Nº 190.371 (5ª Circ. Lagoa e Gávea RJ, livro 542 fls 232, 30/ago/1967) + certidão de casamento RJ #7319 (25/jan/1989).",
       "nationality": "Brasileira",
       "spouseId": "p335",
-      "parentIds": [],
+      "parentIds": [
+        "p363",
+        "p364"
+      ],
       "childrenIds": [
         "p286"
       ],
@@ -2370,14 +2403,17 @@
       "id": "p335",
       "name": "Janeth Dornelas Barbosa",
       "gender": "F",
-      "birthDate": "",
+      "birthDate": "1944-01-01",
       "deathDate": "",
       "birthPlace": "",
       "profession": "",
-      "notes": "Mãe de Alexandre Dornelas Barbosa. Fonte: certidão de casamento RJ #7319 (25/jan/1989). Sobrenome Dornelas explica nome do filho.",
+      "notes": "Mãe de Alexandre Dornelas Barbosa (p286). Casada com Luiz Sergio Barbosa (p334). Pais: José Dornelas (p365) + Nice Duarte Carneiro (p348). Nascida 1944. Sobrenome 'Dornelas' (do pai José) que passa para o filho Alexandre e depois Bia. Em 2026 teria ~82 anos — provavelmente ainda viva. Fonte: certidão de nasc. Alexandre Nº 190.371 (5ª Circ. Lagoa e Gávea RJ, livro 542 fls 232, 30/ago/1967) + certidão de casamento RJ #7319 (25/jan/1989).",
       "nationality": "Brasileira",
       "spouseId": "p334",
-      "parentIds": [],
+      "parentIds": [
+        "p365",
+        "p348"
+      ],
       "childrenIds": [
         "p286"
       ],
@@ -2542,7 +2578,7 @@
       "deathDate": "1852-01-01",
       "birthPlace": "Bom Jardim, Pernambuco, Brasil",
       "profession": "",
-      "notes": "Tronco da linha Pessôa de Mello de Umbuzeiro. Pai do Cel. José da Silva Pessôa (patriarca de Umbuzeiro). Avô do Pres. Epitácio Pessoa. Fonte: parentesco.com.br idp=33273, Nobiliarchia, FGV/CPDOC.",
+      "notes": "Tronco da linha Pessôa de Mello de Umbuzeiro. Pai do Cel. José da Silva Pessôa (patriarca Umbuzeiro). Avô do Pres. Epitácio Pessoa. Fonte: parentesco.com.br idp=33273, Nobiliarchia, FGV/CPDOC, Evaldo Cabral de Mello \"O Nome e o Sangue\". \n\n⚠️ Descendência da Josefa Pessoa de Melo NÃO comprovada. Antonio teve 6 filhos não totalmente indexados — UM deles pode ter ficado em Umbuzeiro PB e ser bisavô da Josefa, mas isso é hipótese. CONTACTO ÚTIL: Irene Pessôa de Lima Câmara (utilizador iplcamara no fórum Geneall) é a especialista em genealogia Pessoa-Bezerra PE/PB.",
       "nationality": "BR",
       "spouseId": "p345",
       "parentIds": [
@@ -2582,7 +2618,7 @@
       "deathDate": "1873-01-01",
       "birthPlace": "Engenho Eixo, Paudalho, Pernambuco, Brasil",
       "profession": "Coronel da Guarda Nacional, Senhor de Engenho",
-      "notes": "PATRIARCA DE UMBUZEIRO. Mudou-se para Umbuzeiro c.1860, construiu a Casa Amarelinha c.1868. Pai do Pres. Epitácio Pessoa (1865 Umbuzeiro). Fonte: parentesco.com.br idp=33273, IBGE Monografia Umbuzeiro 1957, FGV/CPDOC. HIPÓTESE: Josefa Pessoa de Melo descende de ramo colateral deste tronco (irmãos do Cel. José que ficaram em Umbuzeiro e preservaram o apelido completo \"Pessôa de Mello\", enquanto este ramo presidencial abreviou para \"Pessoa\"). A Fazenda Prosperidade dele em Umbuzeiro era originalmente chamada \"Matinada(s)\" — herdada da cousinhood Rego Barros / Cavalcanti / Pessôa de Mello. CONFIRMAÇÃO 21/jun/2026: descendentes da família Josefa Pessoa de Melo mencionam \"Matinada\" como local de origem familiar — forte sinal de descendência colateral.",
+      "notes": "PATRIARCA DE UMBUZEIRO. Mudou-se para Umbuzeiro c.1860. Adquiriu a Fazenda Marcos de Castro de Matinadas (sesmaria 1713 a Marcos de Castro Rocha) — renomeada FAZENDA PROSPERIDADE. Sede transferida para o sítio onde hoje é a cidade de Umbuzeiro. Construiu a Casa Amarelinha c.1868. Pai do Pres. Epitácio Pessoa (1865 Umbuzeiro). Linha presidencial encurtou apelido para \"Silva Pessoa\"; nome longo \"Pessôa de Mello\" mantido só pelo pai Antonio. Fonte: Wikipedia + Prefeitura Umbuzeiro + IPATRIMONIO + Borges da Fonseca. \n\n⚠️ Ligação Josefa Pessoa de Melo → este tronco NÃO comprovada documentalmente. Primeiros moradores Matinadas (historiador José Eduardo Gomes): Aguiar, Souza, Vieira, Valdevino, Barbosa — Pessoa de Mello não na lista. Ver Josefa p263 para 4 hipóteses realistas.",
       "nationality": "BR",
       "spouseId": null,
       "parentIds": [
@@ -2601,7 +2637,7 @@
       "deathDate": "",
       "birthPlace": "Matinada / Umbuzeiro, Paraíba, Brasil",
       "profession": "",
-      "notes": "🔍 PLACEHOLDER HIPOTÉTICO. Identidade real pendente do batismo da Josefa (1900-1920 Matinada/Umbuzeiro). CONFIRMAÇÃO INDIRECTA 21/jun/2026: filho/neto da Josefa (Fernando) menciona \"Matinada\" como local da família — Matinada(s) é a fazenda ancestral Pessôa de Mello herdada pelo Cel. José da Silva Pessôa (depois Faz. Prosperidade). HIPÓTESE: ramo colateral do Cel. José da Silva Pessôa, descendente que ficou em Matinada/Umbuzeiro e preservou o apelido completo \"Pessôa de Mello\". Quando chegar batismo, substituir placeholder pelo nome real.",
+      "notes": "🔍 PLACEHOLDER HIPOTÉTICO. Identidade real pendente do batismo da Josefa (1900-1920 Matinada/Umbuzeiro) ou Jorge Fernando (1944 Umbuzeiro). Hipotético ramo Pessôa de Mello — mas 4 cenários possíveis (ver notas Josefa p263). NÃO ASSUMIR DESCENDÊNCIA DIRECTA do tronco Antonio da Silva Pessôa de Mello sem documento.",
       "nationality": "BR",
       "spouseId": null,
       "parentIds": [
@@ -2613,7 +2649,349 @@
       ],
       "jewish": false,
       "hypothesis": true
+    },
+    "p348": {
+      "id": "p348",
+      "name": "Nice Duarte Carneiro",
+      "gender": "F",
+      "birthDate": "1917-01-01",
+      "deathDate": "1999-01-01",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Mãe de Janeth Dornelas Barbosa (= bisavó paterna de Beatriz). Casada com José Dornelas (p365). Nasceu provavelmente 1915-1920 (Janeth nasceu 1944, idade típica da mãe ~25). Morreu aos 82 anos (~1997-2002). Apelidos novos no ramo: Duarte + Carneiro. Há observação na certidão do neto Alexandre: 'Ressalvo as rasuras onde se lê: Duarte Carneiro' — escrivão corrigiu o sobrenome no acto do registo. Fonte: tradição oral familiar (Vinicius 21/jun/2026) + certidão de nasc. Alexandre Nº 190.371 (5ª Circ. Lagoa e Gávea RJ, livro 542 fls 232, 30/ago/1967). Falta: data nasc/óbito exactas, naturalidade.",
+      "nationality": "BR",
+      "spouseId": "p365",
+      "parentIds": [],
+      "childrenIds": [
+        "p335"
+      ],
+      "jewish": false,
+      "hypothesis": false
+    },
+    "p349": {
+      "id": "p349",
+      "name": "Ignacio Rodrigues de Carvalho",
+      "gender": "M",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Pai de Etelvina Carvalho Goncalves (p217). Fonte: FamilySearch. [FamilySearch ID: L152-XD5]",
+      "nationality": "PT",
+      "spouseId": "p350",
+      "parentIds": [
+        "p355",
+        "p356"
+      ],
+      "childrenIds": [
+        "p217",
+        "p351",
+        "p352",
+        "p353",
+        "p354"
+      ],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L152-XD5"
+    },
+    "p350": {
+      "id": "p350",
+      "name": "Izabel Da Conceição",
+      "gender": "F",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Mãe de Etelvina Carvalho Goncalves (p217). Fonte: FamilySearch. [FamilySearch ID: L152-594]",
+      "nationality": "PT",
+      "spouseId": "p349",
+      "parentIds": [
+        "p357",
+        "p358"
+      ],
+      "childrenIds": [
+        "p217",
+        "p351",
+        "p352",
+        "p353",
+        "p354"
+      ],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L152-594"
+    },
+    "p355": {
+      "id": "p355",
+      "name": "José Francisco Carvalho",
+      "gender": "M",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Avô paterno de Etelvina Carvalho Goncalves. Pai do Ignacio Rodrigues de Carvalho. Fonte: FamilySearch. [FamilySearch ID: L15L-WTQ]",
+      "nationality": "PT",
+      "spouseId": "p356",
+      "parentIds": [],
+      "childrenIds": [
+        "p349"
+      ],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L15L-WTQ"
+    },
+    "p356": {
+      "id": "p356",
+      "name": "Sylvana Jesus Carvalho",
+      "gender": "F",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Avó paterna de Etelvina Carvalho Goncalves. Mulher do José Francisco Carvalho. Fonte: FamilySearch. [FamilySearch ID: L15L-S3V]",
+      "nationality": "PT",
+      "spouseId": "p355",
+      "parentIds": [],
+      "childrenIds": [
+        "p349"
+      ],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L15L-S3V"
+    },
+    "p357": {
+      "id": "p357",
+      "name": "Antônio Cardoso Moura",
+      "gender": "M",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Avô materno de Etelvina Carvalho Goncalves. Pai da Izabel da Conceição. Fonte: FamilySearch. [FamilySearch ID: L15L-3PB]",
+      "nationality": "PT",
+      "spouseId": "p358",
+      "parentIds": [],
+      "childrenIds": [
+        "p350"
+      ],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L15L-3PB"
+    },
+    "p358": {
+      "id": "p358",
+      "name": "Isabel Da Conceição",
+      "gender": "F",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Avó materna de Etelvina Carvalho Goncalves. Mulher do Antônio Cardoso Moura. Fonte: FamilySearch. [FamilySearch ID: L15L-48C]",
+      "nationality": "PT",
+      "spouseId": "p357",
+      "parentIds": [],
+      "childrenIds": [
+        "p350"
+      ],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L15L-48C"
+    },
+    "p351": {
+      "id": "p351",
+      "name": "Antonio Rodrigues de Carvalho",
+      "gender": "M",
+      "birthDate": "1899-01-01",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Irmão da Etelvina Carvalho. Filho de Ignacio Rodrigues de Carvalho + Izabel da Conceição. [FamilySearch ID: L1T7-5T5]",
+      "nationality": "PT",
+      "spouseId": null,
+      "parentIds": [
+        "p349",
+        "p350"
+      ],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "L1T7-5T5"
+    },
+    "p352": {
+      "id": "p352",
+      "name": "João Rodrigues de Carvalho",
+      "gender": "M",
+      "birthDate": "1899-01-01",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Irmão da Etelvina Carvalho. Filho de Ignacio Rodrigues de Carvalho + Izabel da Conceição. [FamilySearch ID: GWZ7-6DD]",
+      "nationality": "PT",
+      "spouseId": null,
+      "parentIds": [
+        "p349",
+        "p350"
+      ],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "GWZ7-6DD"
+    },
+    "p353": {
+      "id": "p353",
+      "name": "Maria Rodrigues de Carvalho",
+      "gender": "F",
+      "birthDate": "1904-01-01",
+      "deathDate": "1904-01-01",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Irmã da Etelvina Carvalho. Faleceu no mesmo ano do nascimento. Filha de Ignacio + Izabel. [FamilySearch ID: GZ7Y-6ZG]",
+      "nationality": "PT",
+      "spouseId": null,
+      "parentIds": [
+        "p349",
+        "p350"
+      ],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "GZ7Y-6ZG"
+    },
+    "p354": {
+      "id": "p354",
+      "name": "Pedro Rodrigues de Carvalho",
+      "gender": "M",
+      "birthDate": "1909-01-01",
+      "deathDate": "",
+      "birthPlace": "",
+      "profession": "",
+      "notes": "Irmão da Etelvina Carvalho. Filho de Ignacio + Izabel. [FamilySearch ID: GZ7Y-TWX]",
+      "nationality": "PT",
+      "spouseId": null,
+      "parentIds": [
+        "p349",
+        "p350"
+      ],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "GZ7Y-TWX"
+    },
+    "p359": {
+      "id": "p359",
+      "name": "Manuel Dias",
+      "gender": "M",
+      "birthDate": "",
+      "deathDate": "1757-01-01",
+      "birthPlace": "Avintes, Porto, Portugal",
+      "profession": "",
+      "notes": "Gen 10-11 Avintes. Cônjuge: Joanna Pereira. Fonte: FamilySearch. [FamilySearch ID: GCML-42W]",
+      "nationality": "PT",
+      "spouseId": "p360",
+      "parentIds": [],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "GCML-42W"
+    },
+    "p360": {
+      "id": "p360",
+      "name": "Joanna Pereira",
+      "gender": "F",
+      "birthDate": "",
+      "deathDate": "1757-01-01",
+      "birthPlace": "Avintes, Porto, Portugal",
+      "profession": "",
+      "notes": "Gen 10-11 Avintes. Cônjuge: Manuel Dias. Fonte: FamilySearch. [FamilySearch ID: GCML-HPC]",
+      "nationality": "PT",
+      "spouseId": "p359",
+      "parentIds": [],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "GCML-HPC"
+    },
+    "p361": {
+      "id": "p361",
+      "name": "José Francisco da Rocha",
+      "gender": "M",
+      "birthDate": "1819-01-01",
+      "deathDate": "",
+      "birthPlace": "Avintes (?), Porto, Portugal",
+      "profession": "",
+      "notes": "Possível pai/avô da Roza Pereira (p253) ou ramo lateral. Fonte: FamilySearch. [FamilySearch ID: GHGG-5XY]",
+      "nationality": "PT",
+      "spouseId": "p362",
+      "parentIds": [],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "GHGG-5XY"
+    },
+    "p362": {
+      "id": "p362",
+      "name": "Anna Francisca da Rocha",
+      "gender": "F",
+      "birthDate": "1822-01-01",
+      "deathDate": "1886-01-01",
+      "birthPlace": "Avintes (?), Porto, Portugal",
+      "profession": "",
+      "notes": "Possível mãe/avó da Roza Pereira (p253) ou ramo lateral. Fonte: FamilySearch. [FamilySearch ID: G4SR-XFD]",
+      "nationality": "PT",
+      "spouseId": "p361",
+      "parentIds": [],
+      "childrenIds": [],
+      "jewish": false,
+      "hypothesis": false,
+      "fs_id": "G4SR-XFD"
+    },
+    "p363": {
+      "id": "p363",
+      "name": "Carlos Barbosa",
+      "gender": "M",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "parentIds": [],
+      "spouseId": "p364",
+      "childrenIds": [
+        "p334"
+      ],
+      "side": "paterno",
+      "nationality": "BR",
+      "notes": "Pai de Luiz Sergio Barbosa (p334). Bisavô paterno-paterno da Beatriz. Fonte: certidão de nascimento de Alexandre Dornelas Barbosa Nº 190.371, 5ª Circunscrição Lagoa e Gávea (RJ), livro 542 fls 232, registado 30/ago/1967. Provável nascimento ~1900-1920 (filho Luiz Sergio nasc. ~1940-1945). Falta: data nasc, naturalidade, óbito, nome dos pais."
+    },
+    "p364": {
+      "id": "p364",
+      "name": "Adalgisa Abrantes",
+      "gender": "F",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "parentIds": [],
+      "spouseId": "p363",
+      "childrenIds": [
+        "p334"
+      ],
+      "side": "paterno",
+      "nationality": "BR",
+      "notes": "Mãe de Luiz Sergio Barbosa (p334). Bisavó paterno-paterna da Beatriz. Sobrenome 'Abrantes' (apelido tipicamente PT, talvez ascendência portuguesa próxima). Fonte: certidão de nascimento de Alexandre Dornelas Barbosa Nº 190.371, 5ª Circunscrição Lagoa e Gávea (RJ), livro 542 fls 232, registado 30/ago/1967."
+    },
+    "p365": {
+      "id": "p365",
+      "name": "José Dornelas",
+      "gender": "M",
+      "birthDate": "",
+      "deathDate": "",
+      "birthPlace": "",
+      "parentIds": [],
+      "spouseId": "p348",
+      "childrenIds": [
+        "p335"
+      ],
+      "side": "paterno",
+      "nationality": "BR",
+      "notes": "Pai de Janeth Dornelas Barbosa (p335). Marido de Nice Duarte Carneiro (p348). Bisavô paterno-materno da Beatriz. O sobrenome 'Dornelas' herdado pela Janeth e depois pelo Alexandre (pai da Bia) e Beatriz vem deste ramo. Provável nasc. ~1910-1920 (filha Janeth nasc. 1944). Sobrenome 'Dornelas' tem origem no concelho de Boticas (Trás-os-Montes PT) ou ramo migrante MG/RS — investigar. Fonte: certidão de nascimento de Alexandre Dornelas Barbosa Nº 190.371, 5ª Circunscrição Lagoa e Gávea (RJ), livro 542 fls 232, registado 30/ago/1967."
     }
   },
-  "nextId": 348
+  "nextId": 366
 }

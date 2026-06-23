@@ -800,6 +800,7 @@ function openModal(id, side){
       ${deathRow}
       ${profRow}
       ${person.birthPlace?`<div class="modal-row"><span class="modal-row-label">Local</span><span class="modal-row-value">${person.birthPlace}</span></div>`:''}
+      ${person.fs_id?`<div class="modal-row"><span class="modal-row-label">FamilySearch</span><span class="modal-row-value"><a href="https://www.familysearch.org/tree/person/${person.fs_id}" target="_blank" style="color:#a5b4fc;text-decoration:underline">${person.fs_id} ↗</a></span></div>`:''}
     </div>
     ${sp?`<div class="modal-section"><div class="modal-section-title">Cônjuge</div><div class="relation-list">${chip([sp],side)}</div></div>`:''}
     ${pars.length?`<div class="modal-section"><div class="modal-section-title">Pais</div><div class="relation-list">${chip(pars,side)}</div></div>`:''}
