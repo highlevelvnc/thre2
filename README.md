@@ -1,6 +1,6 @@
 # 🌳 Árvore Genealógica — Família Silva · Angelo · Oliveira · Thiago
 
-Sistema pessoal de pesquisa e visualização genealógica, cobrindo 9 gerações da família de **Vinicius de Oliveira Angelo** (RJ, 1998).
+Sistema pessoal de pesquisa e visualização genealógica, cobrindo 12 gerações da família de **Vinicius de Oliveira Angelo** (RJ, 1998).
 
 ## 📱 Visualização
 
@@ -13,7 +13,7 @@ Abra [`index.html`](index.html) (redireciona para `mobile.html`) — visualizado
 
 ## 📊 Estado Atual
 
-- **107 membros** em **12 gerações** (inclui candidatos a octavós — séc. XVII)
+- **151 membros** em **12 gerações** (inclui candidatos a octavós — séc. XVII)
 - Linha portuguesa: **Avintes, V.N. Gaia, Porto** + **Mafamude?, V.N. Gaia**
 - Linha paterna: **Paraíba / Pernambuco**
 - Linha materna: **Rio de Janeiro + Portugal**
@@ -32,7 +32,9 @@ Abra [`index.html`](index.html) (redireciona para `mobile.html`) — visualizado
   - Alexandre Pereira + Maria das Neves (pais da Anna das Neves)
 - ✅ **Óbito da Roza Pereira** — 30/set/1856 em Aldeia Nova, 50 anos
 - ✅ **Óbito do Custodio Pereira** — 20/abril/1851, 68 anos, Alem do Ribeiro
-- 🔎 **Em investigação**: origem do Thiago Outeiro (pais incógnitos no batismo de 1849)
+- ✅ **Cronologia de emigração fixada** — o 1.º filho de Domingos (**Anselmo**) nasceu no **Rio em 1893**, logo Domingos e a irmã Leonor deixaram Avintes por volta de **1890-1893**
+- 📍 **Visita a São Pedro de Avintes** (jul/2026) — igreja e cemitério da paróquia-berço da linha portuguesa
+- 🔎 **Em investigação**: origem do Thiago Outeiro (pais incógnitos no batismo de 1849) · óbitos em aberto → ver [`pesquisa_obitos_avintes.md`](pesquisa_obitos_avintes.md)
 
 ## 🗂️ Estrutura
 
@@ -59,7 +61,9 @@ O `mobile.html` é somente-leitura. Para editar, abra `arvore_atualizada.json` d
 
 - [ ] Casamento Thiago Outeiro × Roza Pereira (Avintes, 1824-1831)
 - [ ] Batismo do Thiago Outeiro (Avintes ou Galiza, 1800-1820)
-- [ ] Óbito do Antonio Manoel de S. Thiago (Alem do Ribeiro, 1839-1855)
+- [ ] Óbito do Thiago Outeiro / Antonio Manoel de S. Thiago (Avintes, 1849-1856 — mesmo livro que Custódio e Roza)
+- [ ] Óbito de **Manoel G. Thiago Outeiro & Joaquina** (n.1849) — cruzar Avintes (paroquial ≤1911 / civil V.N. Gaia) vs Rio → ver [`pesquisa_obitos_avintes.md`](pesquisa_obitos_avintes.md)
+- [ ] Óbito de **Anna das Neves** (Avintes, antes de 20/abr/1851)
 - [ ] Confirmação do pai biológico de Jorge Fernando (Umbuzeiro-PB)
 
 ---
