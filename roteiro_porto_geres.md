@@ -8,13 +8,13 @@
 | Hora | Etapa | Notas |
 |---|---|---|
 | **08:30** | Sair do Porto → Braga (A3, ~50 min) | |
-| **09:20** | **Braga** — entregar a encomenda da Cinthia 📦 | |
+| **09:20** | **Braga** — entregar a encomenda da Cinthia 📦 | morada: _[a confirmar]_ |
 | **09:45** | Café + **Sé de Braga** / centro histórico | rápido |
 | **10:15** | *(opcional)* **Bom Jesus do Monte** — escadório barroco + funicular | fica a caminho, +45-60 min |
 | **11:00** | Braga → **Gerês** (Terras de Bouro, ~55 min) | atestar combustível antes de entrar no parque |
 | **12:00** | **Miradouro da Pedra Bela** — panorâmica da serra e albufeira | |
 | **12:45** | **Cascata & Miradouro do Arado** | |
-| **13:30** | **Almoço na Vila do Gerês** — cabrito/vitela barrosã | vila termal |
+| **13:30** | **Almoço na Vila do Gerês** — posta barrosã (opções abaixo) | chegar ~13h: há filas |
 | **15:00** | **Banho:** Portela do Homem (piscinas naturais) ou Cascata "Tahiti" | fato de banho! |
 | **16:30** | **Mata de Albergaria** — Via Romana (Geira) + marcos miliários | zona com controlo de trânsito no verão |
 | **17:30** | Regresso Gerês → Porto (~1h40, via Braga/A3) | |
@@ -36,8 +36,18 @@
 - Mata de Albergaria / Via Romana Geira → https://www.google.com/maps/search/?api=1&query=Mata%20de%20Albergaria%20Ger%C3%AAs
 - Vilarinho das Furnas (aldeia submersa, alternativa) → https://www.google.com/maps/search/?api=1&query=Vilarinho%20das%20Furnas
 
+## 🍽️ Almoço na Vila do Gerês (bom, típico e em conta)
+- **Lurdes Capela** — clássico da vila há 60+ anos; **posta barrosã**, "o pedaço", batatinha a murro. Cabrito só ao fim de semana e **sob encomenda** (não dá na quinta). → https://www.google.com/maps/search/?api=1&query=Restaurante%20Lurdes%20Capela%20Ger%C3%AAs
+- **O Vaticano** — cabrito assado e pratos regionais, ambiente familiar. → https://www.google.com/maps/search/?api=1&query=Restaurante%20O%20Vaticano%20Ger%C3%AAs
+- 💡 Come-se bem e barato em quase toda a vila, mas **há filas** — chegar ~13h ou ligar a reservar. Prato regional a partir de ~10-14 €.
+
 ## 🎒 Levar
 Fato de banho · toalha · água · sapatos de caminhada · lanche · **depósito cheio** (bombas escassas no parque).
+
+## 💶 Poupança (guardar orçamento p/ o Algarve)
+- Miradouros, cascatas e banhos no rio são **grátis** — o gasto real é combustível + 1 refeição.
+- Levar **lanche/água** de casa evita cafés a caminho.
+- Doses minhotas são generosas: **partilhar pratos** e beber **vinho da casa**.
 
 ## ⚠️ Notas
 - **Mata de Albergaria** tem acesso condicionado no verão (portagem/limite de trânsito) — confirmar à entrada.
