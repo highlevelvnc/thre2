@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0c14">
+<title>Hoje · Matosinhos + Gerês</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --bg:#0a0c14; --card:#14182a; --card2:#1a1f33; --elev:#222848;
+  --txt:#f1f3f9; --txt2:#a8b0c5; --txt3:#6b7390;
+  --border:#262e48; --border2:#374060;
+  --indigo:#818cf8; --purple:#c084fc; --pink:#f472b6;
+  --green:#34d399; --amber:#fbbf24; --red:#f87171;
+  --sys:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+html,body{overflow-x:clip}
+body{
+  font-family:'Inter',var(--sys);
+  background:var(--bg);
+  background-image:radial-gradient(ellipse 80% 55% at 50% -8%,rgba(129,140,248,0.13),transparent 60%),
+                   radial-gradient(ellipse 55% 45% at 92% 22%,rgba(192,132,252,0.08),transparent 60%),
+                   radial-gradient(ellipse 60% 50% at 6% 78%,rgba(52,211,153,0.06),transparent 60%);
+  background-attachment:fixed;
+  color:var(--txt);min-height:100vh;padding-bottom:56px;
+  -webkit-font-smoothing:antialiased;line-height:1.5;
+}
+.wrap{max-width:560px;margin:0 auto}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,12,20,0.8);
+  backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  padding:15px 18px;
+}
+.htop{display:flex;align-items:center;gap:12px;max-width:560px;margin:0 auto}
+.badge{
+  width:44px;height:44px;border-radius:13px;flex-shrink:0;
+  background:linear-gradient(135deg,#818cf8 0%,#c084fc 55%,#f472b6 100%);
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+  box-shadow:0 4px 16px rgba(129,140,248,0.4),inset 0 1px 0 rgba(255,255,255,0.3);
+}
+.htext{min-width:0;flex:1}
+h1{
+  font-family:'Manrope',var(--sys);font-size:18px;font-weight:800;letter-spacing:-0.02em;
+  line-height:1.15;background:linear-gradient(135deg,#fff,#c7d0e6);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hsub{font-size:12px;color:var(--txt2);margin-top:2px;font-weight:500}
+.live{
+  font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--green);padding:5px 9px;border:1px solid rgba(52,211,153,0.3);
+  border-radius:20px;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;
+  background:rgba(52,211,153,0.08);
+}
+.live::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.live::before{animation:none}}
+
+main{padding:18px 16px 0}
+section{margin-bottom:26px}
+.eyebrow{
+  display:flex;align-items:center;gap:8px;margin-bottom:13px;
+  font-family:'Manrope',var(--sys);font-size:12px;font-weight:800;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--txt3);
+}
+.eyebrow .line{height:1px;flex:1;background:linear-gradient(90deg,var(--border2),transparent)}
+
+/* summary strip */
+.summary{
+  background:linear-gradient(180deg,var(--card2),var(--card));
+  border:1px solid var(--border);border-radius:16px;padding:15px 16px;
+  display:flex;gap:13px;align-items:flex-start;
+}
+.summary .ico{font-size:26px;line-height:1}
+.summary p{font-size:13.5px;color:var(--txt2)}
+.summary b{color:var(--txt);font-weight:700}
+
+/* timeline */
+.tl{position:relative;padding-left:20px}
+.tl::before{content:'';position:absolute;left:5px;top:6px;bottom:14px;width:2px;
+  background:linear-gradient(180deg,var(--indigo),rgba(129,140,248,0.15))}
+.stop{position:relative;margin-bottom:14px}
+.stop::before{content:'';position:absolute;left:-19px;top:5px;width:12px;height:12px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--indigo);box-shadow:0 0 0 3px rgba(129,140,248,0.15)}
+.stop.warm::before{border-color:var(--amber);box-shadow:0 0 0 3px rgba(251,191,36,0.15)}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px 14px;
+}
+.card .time{font-family:'Manrope',var(--sys);font-size:12px;font-weight:800;color:var(--indigo);
+  font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.stop.warm .card .time{color:var(--amber)}
+.card h3{font-size:15px;font-weight:700;margin:3px 0 2px;letter-spacing:-0.01em}
+.card p{font-size:13px;color:var(--txt2)}
+.mapbtn{
+  display:inline-flex;align-items:center;gap:5px;margin-top:9px;
+  font-size:12px;font-weight:600;color:var(--indigo);text-decoration:none;
+  padding:6px 11px;border:1px solid var(--border2);border-radius:9px;background:rgba(129,140,248,0.06);
+}
+.mapbtn:active{background:rgba(129,140,248,0.14)}
+
+/* food */
+.food-grid{display:flex;flex-direction:column;gap:9px}
+.dish{
+  display:flex;gap:12px;align-items:flex-start;
+  background:var(--card);border:1px solid var(--border);border-radius:13px;padding:12px 13px;
+  border-left:3px solid var(--amber);
+}
+.dish .em{font-size:22px;line-height:1.1;flex-shrink:0}
+.dish .d-name{font-size:14.5px;font-weight:700;letter-spacing:-0.01em}
+.dish .d-desc{font-size:12.5px;color:var(--txt2);margin-top:1px}
+.star{display:inline-block;font-size:10px;font-weight:800;color:var(--amber);
+  border:1px solid rgba(251,191,36,0.35);border-radius:6px;padding:1px 6px;margin-left:6px;
+  vertical-align:middle;letter-spacing:.04em;background:rgba(251,191,36,0.08)}
+.note-odis{
+  margin-top:12px;background:rgba(248,113,113,0.07);border:1px solid rgba(248,113,113,0.25);
+  border-radius:13px;padding:13px 14px;display:flex;gap:11px;align-items:flex-start;
+}
+.note-odis .em{font-size:22px}
+.note-odis p{font-size:13px;color:var(--txt2)}
+.note-odis b{color:#fca5a5;font-weight:700}
+.where{
+  margin-top:11px;background:var(--card);border:1px solid var(--border);border-radius:13px;padding:12px 14px;
+}
+.where h4{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--txt3);margin-bottom:8px}
+.where .r{font-size:13px;color:var(--txt2);margin-bottom:5px}
+.where .r b{color:var(--txt);font-weight:600}
+
+/* checklist */
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+@media (max-width:400px){.checklist{grid-template-columns:1fr}}
+.chk{
+  display:flex;gap:10px;align-items:center;cursor:pointer;user-select:none;
+  background:var(--card);border:1px solid var(--border);border-radius:12px;padding:11px 12px;
+  transition:border-color .15s,background .15s;
+}
+.chk:active{background:var(--card2)}
+.box{
+  width:20px;height:20px;border-radius:7px;border:2px solid var(--border2);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;transition:.15s;
+}
+.box svg{width:11px;height:11px;stroke:#0a0c14;stroke-width:3.5;fill:none;opacity:0;transition:.15s}
+.chk .lbl{font-size:13px;color:var(--txt);font-weight:500}
+.chk .lbl small{display:block;color:var(--txt3);font-size:11px;font-weight:400;margin-top:1px}
+.chk.done{border-color:rgba(52,211,153,0.35)}
+.chk.done .box{background:var(--green);border-color:var(--green)}
+.chk.done .box svg{opacity:1}
+.chk.done .lbl{color:var(--txt3);text-decoration:line-through;text-decoration-color:var(--txt3)}
+
+/* tips */
+.tips{display:flex;flex-direction:column;gap:9px}
+.tip{
+  display:flex;gap:11px;align-items:flex-start;
+  background:linear-gradient(180deg,rgba(192,132,252,0.06),transparent),var(--card);
+  border:1px solid var(--border);border-radius:13px;padding:12px 13px;
+}
+.tip .em{font-size:19px;flex-shrink:0}
+.tip p{font-size:13px;color:var(--txt2)}
+.tip b{color:var(--txt);font-weight:600}
+
+footer{text-align:center;padding:22px 16px;color:var(--txt3);font-size:11.5px}
+footer .dot{color:var(--border2);margin:0 6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="htop">
+    <div class="badge">🏔️</div>
+    <div class="htext">
+      <h1>Hoje · Matosinhos + Gerês</h1>
+      <div class="hsub">quinta, 23 jul · visita aos odis 🇵🇹</div>
+    </div>
+    <span class="live">ao vivo</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <div class="summary">
+      <div class="ico">🚗</div>
+      <p><b>Dia puxado mas possível:</b> Matosinhos de manhã (praia + peixe grelhado), depois ~1h45 até ao Gerês para os odis, e regresso ao Porto à noite. ~4h de carro no total — Matosinhos fica curto, a tarde é para a família.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Roteiro do dia <span class="line"></span></div>
+    <div class="tl">
+      <div class="stop"><div class="card">
+        <div class="time">11:00</div><h3>Sair de casa → Matosinhos</h3>
+        <p>~20 min. Atestar o depósito antes (bombas escassas no Gerês).</p>
+      </div></div>
+      <div class="stop"><div class="card">
+        <div class="time">11:30</div><h3>Praia / marginal de Matosinhos</h3>
+        <p>Passeio rápido à beira-mar antes do almoço.</p>
+        <a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Praia%20de%20Matosinhos" target="_blank" rel="noopener">📍 Abrir no mapa</a>
+      </div></div>
+      <div class="stop warm"><div class="card">
+        <div class="time">12:00</div><h3>Almoço de peixe grelhado 🐟</h3>
+        <p>Rua Heróis de França / Mercado de Matosinhos — dos almoços mais baratos e o clássico da zona.</p>
+        <a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Rua%20Her%C3%B3is%20de%20Fran%C3%A7a%20Matosinhos%20peixe" target="_blank" rel="noopener">📍 Abrir no mapa</a>
+      </div></div>
+      <div class="stop"><div class="card">
+        <div class="time">13:15</div><h3>Partir para o Gerês</h3>
+        <p>~1h45 pela VCI / A3. Última paragem para água e snacks.</p>
+      </div></div>
+      <div class="stop warm"><div class="card">
+        <div class="time">~15:00</div><h3>Chegada · visita aos odis 👴👵</h3>
+        <p>O grosso da tarde é para eles. Levem uma lembrança (ver abaixo).</p>
+      </div></div>
+      <div class="stop"><div class="card">
+        <div class="time">tarde</div><h3>Se sobrar luz: natureza</h3>
+        <p>1 miradouro (Pedra Bela) ou um banho rápido. Sol até ~21:15.</p>
+        <a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=Miradouro%20da%20Pedra%20Bela%20Ger%C3%AAs" target="_blank" rel="noopener">📍 Pedra Bela</a>
+      </div></div>
+      <div class="stop"><div class="card">
+        <div class="time">~19:30</div><h3>Regresso ao Porto</h3>
+        <p>~1h40. De volta a casa por volta das 21:00-21:30.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">O que comer no Gerês 🍽️ <span class="line"></span></div>
+    <div class="food-grid">
+      <div class="dish"><div class="em">🥩</div><div><div class="d-name">Posta / Vitela Barrosã<span class="star">A ESTRELA</span></div><div class="d-desc">Carne DOP grelhada, com batata a murro, grelos e broa de milho. O prato-rei da serra.</div></div></div>
+      <div class="dish"><div class="em">🐐</div><div><div class="d-name">Cabrito assado no forno</div><div class="d-desc">Tradicional de festa — muitas casas só fazem ao fim de semana ou por encomenda.</div></div></div>
+      <div class="dish"><div class="em">🐷</div><div><div class="d-name">Rojões & Sarrabulho à minhota</div><div class="d-desc">Porco frito com cominhos e sarrabulho — rústico e forte, à moda do Minho.</div></div></div>
+      <div class="dish"><div class="em">🐟</div><div><div class="d-name">Trutas do rio</div><div class="d-desc">Fritas, às vezes com presunto — peixe de água doce da região.</div></div></div>
+      <div class="dish"><div class="em">🧀</div><div><div class="d-name">Presunto & fumeiro de Barroso</div><div class="d-desc">Presunto, salpicão, chouriço e alheira — enchidos DOP para petiscar.</div></div></div>
+      <div class="dish"><div class="em">🍯</div><div><div class="d-name">Mel do Gerês & broa</div><div class="d-desc">Mel da serra e pão de milho; para acabar, doçaria regional.</div></div></div>
+      <div class="dish"><div class="em">🍷</div><div><div class="d-name">Vinho verde & Água do Gerês</div><div class="d-desc">Vinho verde tinto/branco da casa (barato) e a famosa água mineral local.</div></div></div>
+    </div>
+
+    <div class="note-odis">
+      <div class="em">💛</div>
+      <p><b>Provável:</b> se os odis são família, vão querer <b>alimentar-vos à força</b> — é a lei minhota. Vão com apetite, comam leve em Matosinhos, e levem uma <b>lembrança</b> (doce do Porto ou uma garrafa de vinho do Porto) como agrado.</p>
+    </div>
+
+    <div class="where">
+      <h4>Se for a restaurante (Vila do Gerês)</h4>
+      <div class="r">🍴 <b>Lurdes Capela</b> — posta barrosã, clássico da vila há 60+ anos</div>
+      <div class="r">🍴 <b>O Vaticano</b> — cabrito assado e pratos regionais</div>
+      <div class="r" style="color:var(--txt3);margin-top:7px">⚠️ Há filas — chegar ~13h ou reservar. Doses generosas: partilhem e peçam vinho da casa.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">O que levar — toca para marcar ✓ <span class="line"></span></div>
+    <div class="checklist" id="chk">
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Fato de banho + toalha<small>rio & cascatas</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Ténis de caminhada<small>terreno irregular</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Água + snacks<small>poucas lojas no parque</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Repelente + protetor solar<small>mosquitos junto à água</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Casaco leve<small>a serra arrefece à noite</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Depósito cheio ⛽<small>bombas escassas</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Dinheiro / trocos<small>tascas sem multibanco</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Lembrança p/ os odis 🎁<small>doce ou vinho do Porto</small></span></div>
+      <div class="chk"><span class="box"><svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg></span><span class="lbl">Mapa offline<small>sinal fraco no parque</small></span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Dicas & poupança <span class="line"></span></div>
+    <div class="tips">
+      <div class="tip"><div class="em">💶</div><p><b>Guardar p/ o Algarve:</b> peixe no mercado de Matosinhos e vinho da casa no Gerês são baratos; a natureza é grátis.</p></div>
+      <div class="tip"><div class="em">⏱️</div><p><b>Se os odis são a prioridade,</b> cortem Matosinhos (ou só almoço rápido) e vão direto — chegam ~13h e têm a tarde toda.</p></div>
+      <div class="tip"><div class="em">🌡️</div><p><b>Mesmo no verão</b> a serra à noite arrefece — levem um casaco para o regresso.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Plano de hoje <span class="dot">·</span> família 🌳 <span class="dot">·</span> atualizado 23 jul
+</footer>
+
+<script>
+(function(){
+  var KEY='geres_checklist_23jul';
+  var items=[].slice.call(document.querySelectorAll('#chk .chk'));
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  items.forEach(function(el,i){
+    if(saved[i])el.classList.add('done');
+    el.addEventListener('click',function(){
+      el.classList.toggle('done');
+      saved[i]=el.classList.contains('done');
+      try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
